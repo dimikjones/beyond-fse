@@ -1,25 +1,25 @@
 .blog,
 .archive {
   .wp-block-post {
-    .mls-post-meta {
+    .bfse-post-meta {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
 
       .wp-block-post-author {
         align-items: center;
-        color: var(--wp--preset--color--navy-blue);
+        color: var(--wp--preset--color--deep-beyond);
         display: flex;
-        font-size: var(--wp--preset--font-size--xs);
+        font-size: var(--wp--preset--font-size--small);
         font-weight: 400;
         gap: 8px;
         justify-content: center;
         text-decoration: none;
         a {
-          font-size: var(--wp--preset--font-size--xs);
+          font-size: var(--wp--preset--font-size--small);
           font-weight: 400;
           text-decoration: none;
-          color: var(--wp--preset--color--navy-blue);
+          color: var(--wp--preset--color--deep-beyond);
         }
 
         .wp-block-post-author__avatar {
@@ -42,7 +42,7 @@
             width: 4px;
             height: 4px;
             border-radius: 100%;
-            background-color: var(--wp--preset--color--light-blue);
+            background-color: var(--wp--preset--color--link-vapor);
           }
         }
       }

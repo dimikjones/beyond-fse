@@ -1,13 +1,13 @@
 .single,
 .editor-styles-wrapper {
   .wp-block-group {
-    &.mls-entry-meta {
+    &.bfse-entry-meta {
       display: inline-block;
 
       * {
         display: inline;
-        font-family: var(--wp--preset--font-family--stack-primary);
-        font-size: var(--wp--preset--font-size--s);
+        font-family: var(--wp--preset--font-family--inter);
+        font-size: var(--wp--preset--font-size--normal);
         font-weight: 700;
         text-transform: uppercase;
       }
@@ -17,14 +17,14 @@
       }
 
       &:has(.wp-block-post-time-to-read) {
-        .wp-block-mls-block-blog-post-entry-meta {
-          .mls-blog-post-meta {
+        .wp-block-bfse-block-blog-post-entry-meta {
+          .bfse-blog-post-meta {
             &:after {
               content: "";
               width: 4px;
               height: 4px;
               display: inline-block;
-              background: var(--wp--preset--color--light-blue);
+              background: var(--wp--preset--color--link-vapor);
               border-radius: 50%;
               position: relative;
               bottom: 4px;

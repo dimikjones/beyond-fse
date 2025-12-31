@@ -1,11 +1,11 @@
 a:where(:not(.wp-element-button)) {
   text-decoration: underline;
   text-decoration-thickness: 10%;
-  text-decoration-color: var(--wp--preset--color--light-blue);
+  text-decoration-color: var(--wp--preset--color--link-vapor);
   transition: text-decoration-color var(--wp--custom--transition-timing--default);
 
   &:hover {
-    text-decoration-color: var(--wp--preset--color--feature-blue);
+    text-decoration-color: var(--wp--preset--color--link-vapor);
   }
 }
 
@@ -36,9 +36,9 @@ p
         .taxonomy-category a
       )
   ) {
-  color: var(--wp--preset--color--feature-blue);
+  color: var(--wp--preset--color--link-vapor);
   font-weight: 400;
-  text-decoration-color: var(--wp--preset--color--light-blue);
+  text-decoration-color: var(--wp--preset--color--link-vapor);
   text-decoration-thickness: 0.125rem;
   text-underline-offset: 1.5px;
   text-decoration-skip-ink: auto;
@@ -72,7 +72,7 @@ p
         .taxonomy-category a
       )
   ):hover {
-  text-decoration-color: var(--wp--preset--color--feature-blue);
+  text-decoration-color: var(--wp--preset--color--link-vapor);
 }
 
 .has-text-color > a {

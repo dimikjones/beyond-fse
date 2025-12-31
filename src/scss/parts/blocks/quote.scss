@@ -1,7 +1,7 @@
 .wp-block-quote {
   &:not(.is-style-blockquote) {
     border-left: var(--wp--preset--spacing--xxxs) solid
-      var(--wp--preset--color--feature-blue);
+      var(--wp--preset--color--link-vapor);
 
     > * {
       padding-left: var(--wp--preset--spacing--s);
@@ -12,7 +12,7 @@
     text-align: center;
 
     p {
-      font-family: var(--wp--preset--font-family--stack-primary);
+      font-family: var(--wp--preset--font-family--inter);
       font-weight: 700;
 
       &:before {

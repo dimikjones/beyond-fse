@@ -1,4 +1,4 @@
-.melapress-header {
+.beyond-fse-header {
   position: relative;
   z-index: 500;
 
@@ -7,140 +7,6 @@
     top: var(--wp-admin--admin-bar--position-offset);
     background-color: #ffffffe5; // 90% opacity
     backdrop-filter: blur(10px);
-  }
-
-  // class for hiding items on tablet view and below
-  .mls-tablet-hide {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-
-    @media (min-width: 1025px) {
-      visibility: visible;
-      height: auto;
-      width: auto;
-    }
-
-    // Hide mobile nav opener for header top
-    @media (max-width: 1024px) {
-      .wp-block-navigation {
-        display: none;
-      }
-    }
-  }
-
-  // class for hiding items on desktop (above teblet)
-  .mls-desktop-hide {
-    @media (min-width: 1025px) {
-      visibility: hidden;
-      height: 0;
-      width: 0;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    // class for hiding items on desktop (above teblet) with display none
-    .mls-desktop-none {
-      display: none;
-    }
-
-    // class for hiding menu items on desktop from the item with the class
-    .mls-desktop-hide-items-from {
-      display: none !important;
-
-      ~ li {
-        display: none !important;
-      }
-    }
-  }
-
-  > .wp-block-group {
-    .wp-block-columns {
-      height: var(--melapress-header-height);
-
-      > .wp-block-column {
-        position: relative;
-
-        @media (min-width: 1025px) {
-          &:last-of-type {
-            height: 100%;
-
-            .wp-block-group {
-              height: 100%;
-              .wp-block-buttons {
-                margin-left: 24px !important;
-              }
-              .wp-block-navigation {
-                height: 100%;
-
-                .wp-block-navigation__responsive-container {
-                  height: 100%;
-
-                  * {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .wp-block-site-logo {
-          visibility: visible;
-          opacity: 1;
-          transition: opacity var(--wp--custom--transition-timing--default);
-
-          &.mls-light {
-            position: absolute;
-            top: 0;
-            left: 0;
-            visibility: hidden;
-            opacity: 1;
-          }
-        }
-
-        html.has-modal-open & {
-          .wp-block-site-logo {
-            opacity: 0;
-            visibility: hidden;
-
-            &.mls-light {
-              opacity: 1;
-              visibility: visible;
-            }
-          }
-        }
-      }
-
-      &.is-not-stacked-on-mobile {
-        > .wp-block-column {
-          @media (max-width: 1024px) {
-            &:first-child {
-              flex-basis: 60% !important;
-            }
-            &:last-child {
-              flex-basis: 40% !important;
-            }
-
-            .wp-block-site-logo {
-              img {
-                max-width: 223px;
-              }
-            }
-          }
-
-          @media (max-width: 600px) {
-            .wp-block-site-logo {
-              img {
-                max-width: 172px;
-              }
-            }
-          }
-        }
-      }
-    }
   }
   .wp-block-navigation {
     order: 100;
@@ -154,7 +20,7 @@
       width: 12px;
       height: 12px;
       margin-left: 5px;
-      color: var(--wp--preset--color--navy-blue);
+      color: var(--wp--preset--color--deep-beyond);
       transition: color var(--wp--custom--transition-timing--default);
       svg {
         display: none;
@@ -164,24 +30,20 @@
     }
 
     .wp-block-navigation-item {
-      font-size: var(--wp--preset--font-size--s);
-      color: var(--wp--preset--color--navy-blue);
       background-color: transparent;
       text-decoration: underline;
       text-decoration-color: transparent;
-      text-decoration-thickness: 4px;
-      text-underline-offset: 11px;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 3px;
       transition: color var(--wp--custom--transition-timing--default),
         text-decoration-color var(--wp--custom--transition-timing--default);
 
       a {
         color: currentColor;
-        font-weight: 400;
-        line-height: 2.2;
       }
-      &.mls-menu-item-heading {
+      &.bfse-menu-item-heading {
         margin-top: -2px;
-        background-color: var(--wp--preset--color--navy-blue) !important;
+        background-color: var(--wp--preset--color--deep-beyond) !important;
         z-index: 20;
 
         &:before {
@@ -197,8 +59,8 @@
           padding-top: 6px !important;
         }
         > * {
-          font-family: var(--wp--preset--font-family--stack-primary);
-          font-size: var(--wp--preset--font-size--m);
+          font-family: var(--wp--preset--font-family--inter);
+          font-size: var(--wp--preset--font-size--medium);
           font-weight: 700;
           line-height: var(--wp--custom--line-height--tight);
           letter-spacing: -0.01em;
@@ -208,9 +70,9 @@
           }
         }
       }
-      .mls-menu-item-label {
+      .bfse-menu-item-label {
         > * {
-          font-size: var(--wp--preset--font-size--xs);
+          font-size: var(--wp--preset--font-size--small);
           font-weight: 700;
           line-height: var(--wp--custom--line-height--tight);
           letter-spacing: 0.05em;
@@ -231,15 +93,12 @@
       .wp-block-navigation__submenu-icon {
         color: currentColor;
       }
-      &:hover {
-        color: var(--wp--preset--color--feature-blue);
-      }
     }
 
     // 1st level menu items
     > .wp-block-navigation-item {
       &:hover {
-        text-decoration-color: var(--wp--preset--color--light-blue);
+        text-decoration-color: var(--wp--preset--color--link-vapor);
 
         .wp-block-navigation__submenu-icon {
           &:after {
@@ -250,9 +109,9 @@
 
       &.current-menu-item,
       &.current-menu-ancestor {
-        text-decoration-color: var(--wp--preset--color--coral);
+        text-decoration-color: var(--wp--preset--color--warm-insight);
         &:hover {
-          text-decoration-color: var(--wp--preset--color--light-blue);
+          text-decoration-color: var(--wp--preset--color--link-vapor);
         }
       }
     }
@@ -265,7 +124,7 @@
 
       > .wp-block-navigation-item {
         font-family: var(--wp--preset--font-family--stack-secondary);
-        font-size: var(--wp--preset--font-size--s);
+        font-size: var(--wp--preset--font-size--normal);
         text-transform: initial;
         > .wp-block-navigation-item__content {
           line-height: 1;
@@ -276,7 +135,7 @@
             var(--wp--custom--transition-timing--default);
         }
 
-        &:hover:not(.mls-menu-item-label) {
+        &:hover:not(.bfse-menu-item-label) {
           > .wp-block-navigation-item__content {
             background-color: #d9e4fd80;
           }
@@ -284,9 +143,9 @@
 
         &.current-menu-item {
           > .wp-block-navigation-item__content {
-            color: var(--wp--preset--color--navy-blue);
+            color: var(--wp--preset--color--deep-beyond);
             text-decoration: underline;
-            text-decoration-color: var(--wp--preset--color--coral);
+            text-decoration-color: var(--wp--preset--color--warm-insight);
             text-decoration-thickness: 0.125rem;
             text-underline-offset: 1.5px;
             text-decoration-skip-ink: auto;
@@ -295,14 +154,14 @@
 
           &:hover {
             > .wp-block-navigation-item__content {
-              color: var(--wp--preset--color--feature-blue);
+              color: var(--wp--preset--color--link-vapor);
             }
           }
         }
       }
 
       // sub levels
-      .wp-block-navigation-item.mls-menu-item-label {
+      .wp-block-navigation-item.bfse-menu-item-label {
         .wp-block-navigation-item__content {
           line-height: 1.25rem;
           padding: 0;
@@ -343,13 +202,13 @@
     width: 100%;
 
     .wp-block-site-logo,
-    .wp-block-mls-block-fs-search {
+    .wp-block-bfse-block-fs-search {
       position: relative;
       z-index: 100005;
     }
 
-    .wp-block-mls-block-fs-search {
-      .mls-search-toggle {
+    .wp-block-bfse-block-fs-search {
+      .bfse-search-toggle {
         color: var(--wp--preset--color--pale-blue);
       }
     }
@@ -358,7 +217,7 @@
   .wp-block-navigation {
     &:not(.has-background) {
       .wp-block-navigation__responsive-container.is-menu-open {
-        background-color: var(--wp--preset--color--navy-blue);
+        background-color: var(--wp--preset--color--deep-beyond);
         height: 100vh;
       }
     }
@@ -366,7 +225,7 @@
 
   .wp-block-navigation__responsive-container.is-menu-open {
     .wp-block-navigation__responsive-container-content {
-      padding-top: var(--melapress-header-height);
+      padding-top: 80px;
 
       .wp-block-navigation-item__content {
         line-height: 2.2;
@@ -399,11 +258,11 @@
           padding: 0;
           gap: var(--wp--preset--spacing--xxxs);
 
-          .mls-menu-item-image-holder {
+          .bfse-menu-item-image-holder {
             width: 30px;
             height: 30px;
 
-            .mls-menu-item-image {
+            .bfse-menu-item-image {
               max-width: 28px;
               max-height: 28px;
             }
@@ -411,7 +270,7 @@
         }
         &:not(:last-child) {
           .wp-block-navigation-item__content {
-            border-bottom: 2px solid var(--wp--preset--color--light-blue);
+            border-bottom: 2px solid var(--wp--preset--color--link-vapor);
           }
         }
       }
@@ -428,46 +287,6 @@
       text-decoration-color: transparent;
     }
   }
-
-  // Header for product pages
-  &.mls-product {
-    // Top header
-    > .wp-block-group:first-of-type {
-      .wp-block-columns {
-        height: var(--melapress-product-top-header-height);
-
-        .wp-block-navigation {
-          // Only 1st level nav
-          > .wp-block-navigation-item {
-            font-family: var(--wp--preset--font-family--stack-primary);
-            font-size: var(--wp--preset--font-size--xs);
-            color: var(--wp--preset--color--white);
-            text-transform: uppercase;
-          }
-        }
-
-        .wp-block-mls-block-fs-search {
-          .mls-search-toggle {
-            color: var(--wp--preset--color--white);
-
-            &:hover {
-              color: var(--wp--preset--color--white);
-            }
-          }
-        }
-      }
-    }
-    // Bottom header
-    > .wp-block-group:last-of-type {
-      .wp-block-columns {
-        height: var(--melapress-product-bottom-header-height);
-
-        .wp-block-navigation__responsive-container-close {
-          top: 23px;
-        }
-      }
-    }
-  }
 }
 
 .has-modal-open {
@@ -480,7 +299,7 @@
 
 .has-modal-open
   .admin-bar
-  .melapress-header
+  .beyond-fse-header
   .is-menu-open
   .wp-block-navigation__responsive-dialog {
   margin-top: 0 !important;

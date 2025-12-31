@@ -20,8 +20,8 @@
       text-decoration: none;
       text-transform: uppercase;
       padding: 1px 12.5px;
-      font-family: var(--wp--preset--font-family--stack-primary);
-      font-size: var(--wp--preset--font-size--xs);
+      font-family: var(--wp--preset--font-family--inter);
+      font-size: var(--wp--preset--font-size--small);
       font-weight: 700;
       line-height: var(--wp--custom--line-height--normal);
       letter-spacing: 0;
@@ -30,7 +30,7 @@
 
     .wp-block-post-terms__prefix,
     .wp-block-post-terms__suffix {
-      font-family: var(--wp--preset--font-family--stack-primary);
+      font-family: var(--wp--preset--font-family--inter);
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: -0.01em;

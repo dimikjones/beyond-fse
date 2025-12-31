@@ -14,7 +14,7 @@ wp.domReady(() => {
 // Filter to register the new 'displayIcon', 'leftIcon', and 'iconName' attributes and attach classes on save.
 wp.hooks.addFilter(
   "blocks.registerBlockType",
-  "melapress-website-theme/button-extension-attributes",
+  "beyond-fse/button-extension-attributes",
   (settings) => {
     if (settings.name !== "core/button") {
       return settings;
@@ -79,7 +79,7 @@ wp.hooks.addFilter(
 // Filter to add the 'Display Icon' toggle control and additional icon settings to the editor sidebar.
 wp.hooks.addFilter(
   "editor.BlockEdit",
-  "melapress-website-theme/button-extension-controls",
+  "beyond-fse/button-extension-controls",
   wp.compose.createHigherOrderComponent((BlockEdit) => {
     return (props) => {
       if (props.name !== "core/button") {
@@ -94,11 +94,11 @@ wp.hooks.addFilter(
           <BlockEdit {...props} />
           <wp.blockEditor.InspectorControls>
             <wp.components.PanelBody
-              title={wp.i18n.__("Icon Settings", "melapress-website-theme")}
+              title={wp.i18n.__("Icon Settings", "beyond-fse")}
               initialOpen={false} // Changed to false to keep it tidy
             >
               <wp.components.ToggleControl
-                label={wp.i18n.__("Display Icon", "melapress-website-theme")}
+                label={wp.i18n.__("Display Icon", "beyond-fse")}
                 checked={displayIcon}
                 onChange={(value) => setAttributes({ displayIcon: value })}
               />
@@ -106,24 +106,24 @@ wp.hooks.addFilter(
               {displayIcon && (
                 <>
                   <wp.components.ToggleControl
-                    label={wp.i18n.__("Left Icon", "melapress-website-theme")}
+                    label={wp.i18n.__("Left Icon", "beyond-fse")}
                     checked={leftIcon}
                     onChange={(value) => setAttributes({ leftIcon: value })}
-                    help={wp.i18n.__("Display icon on the left side", "melapress-website-theme")}
+                    help={wp.i18n.__("Display icon on the left side", "beyond-fse")}
                   />
                   
                   <wp.components.SelectControl
-                    label={wp.i18n.__("Icon Type", "melapress-website-theme")}
+                    label={wp.i18n.__("Icon Type", "beyond-fse")}
                     value={iconName}
                     options={[
-                      { label: wp.i18n.__("None", "melapress-website-theme"), value: "" },
-                      { label: wp.i18n.__("Arrow", "melapress-website-theme"), value: "arrow" },
-                      { label: wp.i18n.__("Plus", "melapress-website-theme"), value: "plus" },
-                      { label: wp.i18n.__("Link", "melapress-website-theme"), value: "link" },
-                      { label: wp.i18n.__("Tag", "melapress-website-theme"), value: "tag" },
+                      { label: wp.i18n.__("None", "beyond-fse"), value: "" },
+                      { label: wp.i18n.__("Arrow", "beyond-fse"), value: "arrow" },
+                      { label: wp.i18n.__("Plus", "beyond-fse"), value: "plus" },
+                      { label: wp.i18n.__("Link", "beyond-fse"), value: "link" },
+                      { label: wp.i18n.__("Tag", "beyond-fse"), value: "tag" },
                     ]}
                     onChange={(value) => setAttributes({ iconName: value })}
-                    help={wp.i18n.__("Select the icon to display", "melapress-website-theme")}
+                    help={wp.i18n.__("Select the icon to display", "beyond-fse")}
                   />
                 </>
               )}
@@ -138,7 +138,7 @@ wp.hooks.addFilter(
 // Filter to add the icon classes to the block wrapper in the editor.
 wp.hooks.addFilter(
   "editor.BlockListBlock",
-  "melapress-website-theme/button-extension-editor-class",
+  "beyond-fse/button-extension-editor-class",
   wp.compose.createHigherOrderComponent((BlockListBlock) => {
     return (props) => {
       const { name, attributes } = props;
@@ -208,7 +208,7 @@ wp.domReady(() => {
    */
   addFilter(
     "blocks.registerBlockType",
-    "melapress-website-theme/nav-link-image-attributes",
+    "beyond-fse/nav-link-image-attributes",
     (settings, name) => {
       // Target only the navigation-link block
       if (name !== "core/navigation-link") {
@@ -236,7 +236,7 @@ wp.domReady(() => {
    */
   addFilter(
     "editor.BlockEdit",
-    "melapress-website-theme/nav-link-image-control",
+    "beyond-fse/nav-link-image-control",
     createHigherOrderComponent((BlockEdit) => {
       return (props) => {
         // Target only the navigation-link block
@@ -269,12 +269,12 @@ wp.domReady(() => {
 
             <wp.blockEditor.InspectorControls>
               <wp.components.PanelBody
-                title={__("Menu Item Image", "melapress-website-theme")}
+                title={__("Menu Item Image", "beyond-fse")}
               >
                 <p>
                   {__(
                     "Image to display next to menu item (doesn't have editor preview to prevent validation errors).",
-                    "melapress-website-theme"
+                    "beyond-fse"
                   )}
                 </p>
                 {!menuImageId ? (
@@ -284,7 +284,7 @@ wp.domReady(() => {
                     value={menuImageId}
                     render={({ open }) => (
                       <wp.components.Button isPrimary onClick={open}>
-                        {__("Select Image", "melapress-website-theme")}
+                        {__("Select Image", "beyond-fse")}
                       </wp.components.Button>
                     )}
                   />
@@ -310,7 +310,7 @@ wp.domReady(() => {
                       isDestructive
                       onClick={onRemoveImage}
                     >
-                      {__("Remove Image", "melapress-website-theme")}
+                      {__("Remove Image", "beyond-fse")}
                     </wp.components.Button>
                   </>
                 )}

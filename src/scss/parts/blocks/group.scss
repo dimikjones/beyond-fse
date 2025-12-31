@@ -95,7 +95,7 @@
     z-index: 10;
 
     &:not(.has-background) {
-      background-color: var(--wp--preset--color--navy-blue);
+      background-color: var(--wp--preset--color--deep-beyond);
     }
 
     &:after {
@@ -190,7 +190,7 @@
       left: 0;
       display: block;
       content: "";
-      background-color: var(--wp--preset--color--navy-blue);
+      background-color: var(--wp--preset--color--deep-beyond);
       width: 100vw;
       height: var(--diagonal-height);
       z-index: -1;
@@ -208,24 +208,6 @@
       padding-right: 1.45em;
       margin-left: auto !important;
       margin-right: auto !important;
-    }
-  }
-  // Adjust padding when Post Boxes block Horizontal Scroll option is present
-  &:has(.wp-block-mls-block-post-boxes.has-horizontal-scroll) {
-    padding-right: 0;
-  }
-
-  // Custom CSS classes
-  &.is-indent-layout {
-    @media (min-width: 1440px) {
-      margin-left: 25% !important;
-      padding-left: 0;
-      transform: translateX(
-        var(--wp--style--root--padding-right)
-      ); // global side padding
-    }
-    @media (min-width: 1680px) {
-      padding-left: 2vw;
     }
   }
 }

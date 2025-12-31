@@ -202,9 +202,9 @@
  */
 @mixin input-styles {
   font-size: inherit;
-  color: var(--wp--preset--color--navy-blue);
+  color: var(--wp--preset--color--deep-beyond);
   border: var(--wp--custom--border--radius--small) solid
-    var(--wp--preset--color--light-blue);
+    var(--wp--preset--color--link-vapor);
   border-radius: var(--wp--custom--border--radius--small);
   box-shadow: none;
   outline: none;
@@ -216,11 +216,11 @@
 
   &:focus,
   &:focus:invalid {
-    color: var(--wp--preset--color--navy-blue);
+    color: var(--wp--preset--color--deep-beyond);
     line-height: var(--wp--custom--line-height--normal);
     border-style: solid;
     border-width: var(--wp--custom--border--radius--small);
-    border-color: var(--wp--preset--color--light-blue);
+    border-color: var(--wp--preset--color--link-vapor);
     box-shadow: none;
     outline: none;
   }
@@ -231,13 +231,13 @@
 
   &::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--wp--preset--color--light-blue);
+    color: var(--wp--preset--color--link-vapor);
     opacity: 1; /* Firefox */
   }
 
   &::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: var(--wp--preset--color--light-blue);
+    color: var(--wp--preset--color--link-vapor);
   }
 }
 
@@ -255,8 +255,8 @@
   transition: color var(--wp--custom--transition-timing--default),
     background var(--wp--custom--transition-timing--default);
   height: auto;
-  font-family: var(--wp--preset--font-family--stack-primary);
-  font-size: var(--wp--preset--font-size--s);
+  font-family: var(--wp--preset--font-family--inter);
+  font-size: var(--wp--preset--font-size--normal);
   font-weight: 600;
   line-height: var(--wp--custom--line-height--tight);
   padding-top: 14px;
@@ -266,13 +266,13 @@
   background-color: var(--wp--preset--color--pale-blue);
   border-radius: var(--wp--custom--border--radius--small);
   border-width: 0;
-  color: var(--wp--preset--color--feature-blue);
+  color: var(--wp--preset--color--link-vapor);
   letter-spacing: -0.01em;
 
   // Default Hover and Focus States
   &:hover,
   &:focus {
     color: var(--wp--preset--color--white);
-    background: var(--wp--preset--color--feature-blue);
+    background: var(--wp--preset--color--link-vapor);
   }
 }

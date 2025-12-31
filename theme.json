@@ -84,6 +84,11 @@
           "slug": "link-vapor"
         },
         {
+          "color": "#f2b863",
+          "name": "Warm Insight",
+          "slug": "warm-insight"
+        },
+        {
           "color": "#ffffff",
           "name": "White",
           "slug": "white"

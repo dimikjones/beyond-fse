@@ -7,25 +7,4 @@
       }
     }
   }
-
-  .wp-block-social-link.wp-social-link {
-    .melapress-footer-top & {
-    }
-
-    &:hover {
-      transform: none;
-    }
-    a {
-      font-weight: 600;
-
-      .wp-block-social-link-label {
-        font-size: var(--wp--preset--font-size--xs);
-      }
-    }
-
-    .wp-block-social-link-label {
-      font-size: var(--wp--preset--font-size--xs);
-      font-weight: 600;
-    }
-  }
 }
