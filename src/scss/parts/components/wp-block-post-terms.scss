@@ -8,14 +8,13 @@
     margin: 0;
   }
   &.taxonomy-category,
-  &.taxonomy-kb_category,
-  &.taxonomy-kb-category {
+  &.taxonomy-kb_category {
     a,
     span:not(.wp-block-post-terms__prefix, .wp-block-post-terms__separator, .wp-block-post-terms__suffix) {
       display: inline-flex;
       align-items: center;
-      background-color: var(--wp--preset--color--pale-blue);
-      color: var(--wp--preset--color--grey-blue);
+      background-color: var(--wp--preset--color--warm-insight);
+      color: var(--wp--preset--color--deep-beyond);
       border-radius: var(--wp--custom--border--radius--small);
       text-decoration: none;
       text-transform: uppercase;

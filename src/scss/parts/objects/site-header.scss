@@ -41,55 +41,6 @@
       a {
         color: currentColor;
       }
-      &.bfse-menu-item-heading {
-        margin-top: -2px;
-        background-color: var(--wp--preset--color--deep-beyond) !important;
-        z-index: 20;
-
-        &:before {
-          content: "";
-          width: calc(100% + 2.9em);
-          height: 2px;
-          border-bottom: 2px dotted;
-          left: -1.45em;
-          margin-top: 22px;
-          position: relative;
-        }
-        > a {
-          padding-top: 6px !important;
-        }
-        > * {
-          font-family: var(--wp--preset--font-family--inter);
-          font-size: var(--wp--preset--font-size--medium);
-          font-weight: 700;
-          line-height: var(--wp--custom--line-height--tight);
-          letter-spacing: -0.01em;
-          color: var(--wp--preset--color--pale-blue);
-          &:hover {
-            color: var(--wp--preset--color--pale-blue);
-          }
-        }
-      }
-      .bfse-menu-item-label {
-        > * {
-          font-size: var(--wp--preset--font-size--small);
-          font-weight: 700;
-          line-height: var(--wp--custom--line-height--tight);
-          letter-spacing: 0.05em;
-          text-transform: uppercase;
-          color: var(--wp--preset--color--grey-blue);
-          &:hover {
-            color: var(--wp--preset--color--grey-blue);
-          }
-
-          @media (max-width: 1024px) {
-            color: var(--wp--preset--color--pale-blue);
-            &:hover {
-              color: var(--wp--preset--color--pale-blue);
-            }
-          }
-        }
-      }
       .wp-block-navigation__submenu-icon {
         color: currentColor;
       }
@@ -206,12 +157,6 @@
       position: relative;
       z-index: 100005;
     }
-
-    .wp-block-bfse-block-fs-search {
-      .bfse-search-toggle {
-        color: var(--wp--preset--color--pale-blue);
-      }
-    }
   }
 
   .wp-block-navigation {
@@ -281,7 +226,7 @@
     .wp-block-navigation__responsive-container-content
       .wp-block-navigation__container,
     .wp-block-navigation__responsive-container-content .wp-block-page-list {
-      color: var(--wp--preset--color--pale-blue) !important;
+      color: var(--wp--preset--color--warm-insight) !important;
       width: 100%;
       align-items: flex-start;
       text-decoration-color: transparent;
