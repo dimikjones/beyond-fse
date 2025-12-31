@@ -1,0 +1,41 @@
+<!-- wp:template-part {"slug":"header","theme":"beyond-fse","area":"header","className":"beyond-fse-header is-position-sticky"} /-->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|m"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--m)"><!-- wp:query {"queryId":2,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[],"format":[]},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"default"}} -->
+<!-- wp:post-featured-image {"isLink":true} /-->
+
+<!-- wp:group {"className":"mls-post-article-content","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxs"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group mls-post-article-content" style="margin-top:var(--wp--preset--spacing--xxs)"><!-- wp:post-terms {"term":"category"} /-->
+
+<!-- wp:post-title {"textAlign":"left","isLink":true,"fontSize":"m"} /-->
+
+<!-- wp:spacer {"height":"32px"} -->
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:spacer {"height":"50px"} -->
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:query-pagination {"className":"load-more infinite-scroll","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results {"align":"center"} -->
+<!-- wp:paragraph {"align":"center","placeholder":"Add text or blocks that will display when a query returns no results."} -->
+<p class="has-text-align-center">No results</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"beyond-fse","area":"footer","className":"melapress-footer"} /-->
