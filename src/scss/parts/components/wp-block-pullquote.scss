@@ -1,0 +1,22 @@
+.wp-block-pullquote {
+  font-size: var(--wp--preset--font-size--l) !important;
+
+  p {
+    font-family: var(--wp--preset--font-family--stack-primary);
+    font-weight: 700;
+    margin-bottom: var(--wp--preset--spacing--xxs);
+
+    &:before {
+      content: "“ ";
+    }
+
+    &:after {
+      content: " ”";
+    }
+  }
+
+  cite {
+    font-style: normal;
+    font-size: 0.85em;
+  }
+}

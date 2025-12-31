@@ -1,0 +1,48 @@
+.wp-block-image {
+  &.is-style-aspect-16x9,
+  &.is-style-aspect-square,
+  &.is-style-aspect-circle {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .components-resizable-box__container {
+      max-height: 100% !important;
+      height: 100% !important;
+    }
+
+    a {
+      display: block;
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &.is-style-aspect-16x9 {
+    aspect-ratio: 16 / 9;
+  }
+
+  &.is-style-aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  &.is-style-aspect-circle {
+    aspect-ratio: 1 / 1;
+
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  &.is-style-border-radius {
+    img {
+      border-radius: var(--wp--custom--border--radius--medium);
+    }
+  }
+}

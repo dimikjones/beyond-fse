@@ -1,0 +1,80 @@
+a:where(:not(.wp-element-button)) {
+  text-decoration: underline;
+  text-decoration-thickness: 10%;
+  text-decoration-color: var(--wp--preset--color--light-blue);
+  transition: text-decoration-color var(--wp--custom--transition-timing--default);
+
+  &:hover {
+    text-decoration-color: var(--wp--preset--color--feature-blue);
+  }
+}
+
+ul:not(.wp-block-navigation)
+  a:where(
+    :not(
+        .wp-element-button,
+        .mp-no-underline,
+        .mp-text-uppercase,
+        .taxonomy-category a
+      )
+  ),
+ol
+  a:where(
+    :not(
+        .wp-element-button,
+        .mp-no-underline,
+        .mp-text-uppercase,
+        .taxonomy-category a
+      )
+  ),
+p
+  a:where(
+    :not(
+        .wp-element-button,
+        .mp-no-underline,
+        .mp-text-uppercase,
+        .taxonomy-category a
+      )
+  ) {
+  color: var(--wp--preset--color--feature-blue);
+  font-weight: 400;
+  text-decoration-color: var(--wp--preset--color--light-blue);
+  text-decoration-thickness: 0.125rem;
+  text-underline-offset: 1.5px;
+  text-decoration-skip-ink: auto;
+  transition: text-decoration-color var(--wp--custom--transition-timing--default);
+}
+
+ul:not(.wp-block-navigation)
+  a:where(
+    :not(
+        .wp-element-button,
+        .mp-no-underline,
+        .mp-text-uppercase,
+        .taxonomy-category a
+      )
+  ):hover,
+ol
+  a:where(
+    :not(
+        .wp-element-button,
+        .mp-no-underline,
+        .mp-text-uppercase,
+        .taxonomy-category a
+      )
+  ):hover,
+p
+  a:where(
+    :not(
+        .wp-element-button,
+        .mp-no-underline,
+        .mp-text-uppercase,
+        .taxonomy-category a
+      )
+  ):hover {
+  text-decoration-color: var(--wp--preset--color--feature-blue);
+}
+
+.has-text-color > a {
+  color: inherit;
+}

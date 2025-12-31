@@ -1,0 +1,33 @@
+.wp-block-post-template {
+  &.is-layout-grid {
+    gap: 18px;
+    margin: 0;
+
+    @for $i from 2 through 16 {
+      @include dynamic-responsive-grid($i);
+    }
+    .wp-block-post {
+      margin: 0;
+      border-radius: var(--wp--custom--border--radius--medium);
+      box-shadow: var(--wp--preset--shadow--double-soft);
+      height: 100%;
+      overflow: hidden;
+
+      &:where(img) {
+        aspect-ratio: 16 / 9;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        width: 100%;
+      }
+
+      .mls-post-article-content {
+        height: 100%;
+        padding: var(--wp--preset--spacing--xxs);
+        background-color: var(--wp--preset--color--white);
+      }
+    }
+  }
+}

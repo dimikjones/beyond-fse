@@ -1,0 +1,59 @@
+ul,
+ol {
+  margin: 0 0 var(--wp--preset--spacing--xxs) var(--wp--preset--spacing--xxxs);
+  padding-left: var(--wp--preset--spacing--s);
+}
+
+ul,
+ol {
+  margin: 0 0 var(--wp--preset--spacing--xxs);
+  padding: 0 0 0 var(--wp--preset--spacing--m);
+  line-height: 1.4em;
+
+  > li {
+    margin-bottom: var(--wp--preset--spacing--xxs);
+    list-style-position: outside;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul {
+  list-style: disc;
+
+  li {
+    &::marker {
+      color: var(--wp--preset--color--coral);
+    }
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5rem var(--wp--preset--spacing--xxs);
+}
+
+.melapress-header ul,
+.melapress-footer ul {
+  list-style: none;
+  margin: 0;
+
+  li {
+    margin: 0;
+  }
+}

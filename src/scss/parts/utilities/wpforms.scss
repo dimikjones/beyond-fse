@@ -1,0 +1,92 @@
+.wp-theme-melapress-website-theme {
+  .wpforms-container {
+    margin-bottom: 8px;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+      @include input-styles;
+    }
+
+    input[type="submit"]:not(:hover):not(:active),
+    button[type="submit"]:not(:hover):not(:active),
+    .wpforms-page-button:not(:hover):not(:active) {
+      @include button-base-styles;
+    }
+
+    input[type="submit"],
+    button[type="submit"],
+    .wpforms-page-button {
+      &:hover {
+        @include button-base-styles;
+
+        & {
+          cursor: pointer;
+        }
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    .wpforms-form {
+      .wpforms-field {
+        input.wpforms-error {
+          border-width: var(--wp--custom--border--radius--small);
+          box-shadow: none;
+
+          &:hover,
+          &:focus {
+            border-width: var(--wp--custom--border--radius--small);
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    &.mp-newsletter-signup {
+      .wpforms-form {
+        position: relative;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+
+        .wpforms-field {
+          padding: 0;
+        }
+
+        .wpforms-submit-container {
+          margin: 0;
+        }
+      }
+
+      input[type="email"] {
+        min-height: 72px;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+
+      input[type="submit"],
+      button[type="submit"] {
+        min-width: 165px;
+        height: 72px !important;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+      }
+    }
+  }
+}

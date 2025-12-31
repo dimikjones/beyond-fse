@@ -1,0 +1,17 @@
+.wp-block-separator {
+    width: 15rem;
+    height: 4px;
+    border: 0;
+    background: var(--wp--preset--color--feature-blue);
+    opacity: .75;
+
+    &.is-style-default {
+        width: 100%;
+    }
+
+    &.is-style-wide {
+        width: unset;
+        height: .6rem;
+        background: repeating-linear-gradient(135deg, var(--wp--preset--color--coral), var(--wp--preset--color--coral) 1px, transparent 1px, transparent 4px) !important;
+    }
+}

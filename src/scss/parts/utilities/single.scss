@@ -1,0 +1,38 @@
+.single,
+.editor-styles-wrapper {
+  .wp-block-group {
+    &.mls-entry-meta {
+      display: inline-block;
+
+      * {
+        display: inline;
+        font-family: var(--wp--preset--font-family--stack-primary);
+        font-size: var(--wp--preset--font-size--s);
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .wp-block-post-author__byline {
+        width: auto;
+      }
+
+      &:has(.wp-block-post-time-to-read) {
+        .wp-block-mls-block-blog-post-entry-meta {
+          .mls-blog-post-meta {
+            &:after {
+              content: "";
+              width: 4px;
+              height: 4px;
+              display: inline-block;
+              background: var(--wp--preset--color--light-blue);
+              border-radius: 50%;
+              position: relative;
+              bottom: 4px;
+              margin: 0 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

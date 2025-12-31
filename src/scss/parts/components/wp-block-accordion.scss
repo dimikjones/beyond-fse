@@ -1,0 +1,78 @@
+// Accordion Block Styling
+.wp-block-accordion {
+  // Container styling
+  background: var(--wp--preset--color--white);
+  border-radius: var(--wp--custom--border--radius--medium);
+}
+
+.wp-block-accordion-item {
+  // Item container styling
+  border-radius: var(--wp--custom--border--radius--small);
+  background-color: var(--wp--preset--color--pale-blue);
+  margin: var(--wp--preset--spacing--xxxs) 0;
+
+  > .wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon {
+    transition: none;
+    position: relative;
+    font-size: 0;
+    width: 29px;
+    height: 29px;
+    display: flex;
+  }
+
+  .wp-block-accordion-heading__toggle-title {
+    padding-right: var(--wp--preset--spacing--xxxs);
+    strong {
+      background: none;
+    }
+  }
+
+  &.is-open {
+    > .wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  .wp-block-accordion-heading__toggle {
+    padding: 0;
+
+    &:hover {
+      .wp-block-accordion-heading__toggle-title {
+        text-decoration: none;
+      }
+    }
+
+    .wp-block-accordion-heading__toggle-icon {
+      @include mlsMaskIconSVG(
+        "accordion-icon",
+        $width: 29px,
+        $height: 29px,
+        $spacing: 0
+      );
+
+      // Icon Postion Left
+      + .wp-block-accordion-heading__toggle-title {
+        padding-left: var(--wp--preset--spacing--xxxs);
+        padding-right: 0;
+      }
+    }
+  }
+
+  // Remove border from first and last items for cleaner appearance
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: no-preference) {
+  .wp-block-accordion-item
+    > .wp-block-accordion-heading
+    .wp-block-accordion-heading__toggle-icon {
+    transition: transform var(--wp--custom--transition-timing--default);
+  }
+}

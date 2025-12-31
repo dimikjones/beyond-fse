@@ -1,0 +1,93 @@
+.melapress-footer {
+  margin-block-start: 0;
+
+  .melapress-footer-top {
+    // footer navigation 4 columns adjustments start
+    > .wp-block-columns:first-of-type {
+      > .wp-block-column {
+        height: auto;
+      }
+    }
+    @media (min-width: 481px) and (max-width: 781px) {
+      > .wp-block-columns:first-of-type {
+        flex-wrap: wrap !important;
+
+        > .wp-block-column {
+          flex-basis: calc(
+            50% - (var(--wp--preset--spacing--xxs) / 2)
+          ) !important;
+        }
+      }
+    }
+    // footer navigation 4 columns adjustments end
+
+    // footer social & contact adjustments start
+    @media (max-width: 781px) {
+      > .wp-block-columns:last-of-type {
+        > .wp-block-column {
+          > * {
+            justify-content: center;
+          }
+        }
+      }
+    }
+    // footer social & contact adjustments end
+  }
+
+  nav.wp-block-navigation {
+    a {
+      font-size: var(--wp--preset--font-size--xs);
+      font-weight: 400;
+      line-height: var(--wp--custom--line-height--tight);
+    }
+  }
+}
+
+.melapress-footer-bottom {
+  .wp-block-navigation__container {
+    .wp-block-navigation-item {
+      .wp-block-navigation-item__content {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-weight: 400;
+
+        > * {
+          text-decoration: underline;
+          text-decoration-color: var(--wp--preset--color--light-blue);
+          text-decoration-thickness: 0.125rem;
+          text-underline-offset: 1.5px;
+          text-decoration-skip-ink: auto;
+          transition: text-decoration-color 0.35s ease-in-out;
+        }
+
+        &:hover,
+        &:focus {
+          > * {
+            text-decoration-color: var(--wp--preset--color--feature-blue);
+          }
+        }
+      }
+      &:before {
+        content: " | ";
+        color: rgba(255, 255, 255, 0.5);
+      }
+      &:first-of-type {
+        &:before {
+          content: none;
+        }
+
+        .wp-block-navigation-item__content {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  // Inverse query since block styling is as it is by default
+  @media (max-width: 781px) {
+    .wp-block-group {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

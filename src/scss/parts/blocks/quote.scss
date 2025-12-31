@@ -1,0 +1,27 @@
+.wp-block-quote {
+  &:not(.is-style-blockquote) {
+    border-left: var(--wp--preset--spacing--xxxs) solid
+      var(--wp--preset--color--feature-blue);
+
+    > * {
+      padding-left: var(--wp--preset--spacing--s);
+    }
+  }
+
+  &.is-style-blockquote {
+    text-align: center;
+
+    p {
+      font-family: var(--wp--preset--font-family--stack-primary);
+      font-weight: 700;
+
+      &:before {
+        content: "“ ";
+      }
+
+      &:after {
+        content: " ”";
+      }
+    }
+  }
+}

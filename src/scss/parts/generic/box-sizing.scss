@@ -1,0 +1,10 @@
+/*--------------------------------------------------------------
+# Generic - Ground-zero styles (resets, box-sizing, etc.).
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; // fix overflow when FS search is present
+}
