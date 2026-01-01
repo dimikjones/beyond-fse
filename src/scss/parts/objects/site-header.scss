@@ -4,9 +4,7 @@
 
   &.is-position-sticky {
     position: sticky;
-    top: var(--wp-admin--admin-bar--position-offset);
-    background-color: #ffffffe5; // 90% opacity
-    backdrop-filter: blur(10px);
+    top: var(--wp-admin--admin-bar--height,0px);
   }
   .wp-block-navigation {
     order: 100;

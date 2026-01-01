@@ -27,7 +27,7 @@ select {
     var(--wp--preset--color--link-vapor);
   border-radius: var(--wp--custom--border--radius--small);
   line-height: 1.4em;
-  padding: 11px var(--wp--preset--spacing--s) 11px 12px;
+  padding: 11px var(--wp--preset--spacing--normal) 11px 12px;
   appearance: none; // hide default chevron
   background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxOSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xLjUgMS41TDkuNSA5LjVMMTcuNSAxLjUiIHN0cm9rZT0iIzQ1NEJGNyIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4NCjwvc3ZnPg0K");
   background-repeat: no-repeat;

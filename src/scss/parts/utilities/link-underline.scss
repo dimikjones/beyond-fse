@@ -9,7 +9,7 @@ a:where(:not(.wp-element-button)) {
   }
 }
 
-ul:not(.wp-block-navigation)
+ul:not(.wp-block-navigation, .wp-block-post-template)
   a:where(
     :not(
         .wp-element-button,

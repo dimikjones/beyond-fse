@@ -1,0 +1,15 @@
+.wp-block-post-title {
+  a {
+    color: var(--wp--preset--color--syntax-heading);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color
+      var(--wp--custom--transition-timing--default);
+
+    &:hover,
+    &:focus {
+      color: var(--wp--preset--color--syntax-heading);
+      text-decoration-color: var(--wp--preset--color--link-vapor);
+    }
+  }
+}

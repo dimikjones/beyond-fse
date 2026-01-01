@@ -1,0 +1,14 @@
+.wp-block-site-title {
+    transform: rotate(-1deg);
+  a {
+    color: currentColor;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    transition: text-decoration-color
+      var(--wp--custom--transition-timing--default);
+    &:hover {
+      color: currentColor;
+      text-decoration-color: currentColor;
+    }
+  }
+}

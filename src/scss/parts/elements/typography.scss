@@ -22,6 +22,7 @@ h6 {
 }
 
 :is(h1 a, h2 a, h3 a, h4 a, h5 a, h6 a) {
+  color: currentColor;
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: text-decoration-color
@@ -42,7 +43,6 @@ h6 {
     h6:focus a,
     h6:hover a
   ) {
-  text-decoration-color: currentColor;
 }
 
 p {

@@ -4,8 +4,8 @@
   "settings": {
     "appearanceTools": true,
     "layout": {
-      "contentSize": "min(90%, 60.5rem)",
-      "wideSize": "min(100%, 71.25rem)"
+      "contentSize": "min(90%, 50rem)",
+      "wideSize": "min(100%, 64rem)"
     },
     "shadow": {
       "defaultPresets": false,

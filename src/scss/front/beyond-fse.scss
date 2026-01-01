@@ -12,63 +12,63 @@
 /*--------------------------------------------------------------
 # Settings - Global variables, config switches.
 --------------------------------------------------------------*/
-@import '../parts/settings/global-css-variables.scss';
+@import "../parts/settings/global-css-variables.scss";
 
 /*--------------------------------------------------------------
 # Tools - Default mixins and functions.
 --------------------------------------------------------------*/
-@import '../parts/tools/functions-and-mixins.scss';
+@import "../parts/tools/functions-and-mixins.scss";
 
 /*--------------------------------------------------------------
 # Generic - Ground-zero styles (resets, box-sizing, etc.).
 --------------------------------------------------------------*/
-@import '../parts/generic/box-sizing.scss';
+@import "../parts/generic/box-sizing.scss";
 
 /*--------------------------------------------------------------
 # Elements - Unclassed HTML elements (type selectors).
 --------------------------------------------------------------*/
-@import '../parts/elements/links.scss';
-@import '../parts/elements/lists.scss';
-@import '../parts/elements/typography.scss';
-@import '../parts/elements/forms.scss';
-
+@import "../parts/elements/links.scss";
+@import "../parts/elements/lists.scss";
+@import "../parts/elements/typography.scss";
+@import "../parts/elements/forms.scss";
 
 /*--------------------------------------------------------------
 # Objects - Undecorated design patterns.
 --------------------------------------------------------------*/
-@import '../parts/objects/site-footer.scss';
-@import '../parts/objects/site-header.scss';
+@import "../parts/objects/site-footer.scss";
+@import "../parts/objects/site-header.scss";
 
 /*--------------------------------------------------------------
 # Blocks - editor related styles.
 --------------------------------------------------------------*/
-@import '../parts/blocks/group.scss';
-@import '../parts/blocks/button.scss';
-@import '../parts/blocks/image.scss';
-@import '../parts/blocks/navigation.scss';
-@import '../parts/blocks/paragraph.scss';
-@import '../parts/blocks/quote.scss';
+@import "../parts/blocks/group.scss";
+@import "../parts/blocks/button.scss";
+@import "../parts/blocks/image.scss";
+@import "../parts/blocks/navigation.scss";
+@import "../parts/blocks/paragraph.scss";
+@import "../parts/blocks/post-title.scss";
+@import "../parts/blocks/quote.scss";
+@import "../parts/blocks/site-title.scss";
 
 /*--------------------------------------------------------------
 # Components - specific UI components.
 --------------------------------------------------------------*/
-@import '../parts/components/wp-block-accordion.scss';
-@import '../parts/components/wp-block-code.scss';
-@import '../parts/components/wp-block-post-author.scss';
-@import '../parts/components/wp-block-post-template.scss';
-@import '../parts/components/wp-block-post-terms.scss';
-@import '../parts/components/wp-block-post-time-to-read.scss';
-@import '../parts/components/wp-block-pullquote.scss';
-@import '../parts/components/wp-block-separator.scss';
-@import '../parts/components/wp-block-social-links.scss';
-
+@import "../parts/components/wp-block-accordion.scss";
+@import "../parts/components/wp-block-code.scss";
+@import "../parts/components/wp-block-post-author.scss";
+@import "../parts/components/wp-block-post-template.scss";
+@import "../parts/components/wp-block-post-terms.scss";
+@import "../parts/components/wp-block-post-time-to-read.scss";
+@import "../parts/components/wp-block-pullquote.scss";
+@import "../parts/components/wp-block-separator.scss";
+@import "../parts/components/wp-block-social-links.scss";
 
 /*--------------------------------------------------------------
 # Utilities - Helpers and overrides.
 --------------------------------------------------------------*/
-@import '../parts/utilities/archive.scss';
-@import '../parts/utilities/error-pages.scss';
-@import '../parts/utilities/single-post.scss';
-@import '../parts/utilities/single.scss';
-@import '../parts/utilities/link-underline.scss';
-@import '../parts/utilities/single.scss';
+@import "../parts/utilities/archive.scss";
+@import "../parts/utilities/error-pages.scss";
+@import "../parts/utilities/single-post.scss";
+@import "../parts/utilities/single.scss";
+@import "../parts/utilities/link-underline.scss";
+@import "../parts/utilities/single.scss";
