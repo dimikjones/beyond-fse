@@ -178,7 +178,7 @@
         {
           "name": "Vast",
           "slug": "vast",
-          "size": "clamp(2.7994rem, 2.4031rem + 1.9811vw, 3.8147rem)"
+          "size": "clamp(2.5994rem, 2.4031rem + 1.9811vw, 3.4375rem)"
         }
       ],
       "fontStyle": true,

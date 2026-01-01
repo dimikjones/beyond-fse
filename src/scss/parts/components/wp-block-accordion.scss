@@ -43,7 +43,7 @@
     }
 
     .wp-block-accordion-heading__toggle-icon {
-      @include mlsMaskIconSVG(
+      @include beyondFseMaskIconSVG(
         "accordion-icon",
         $width: 29px,
         $height: 29px,

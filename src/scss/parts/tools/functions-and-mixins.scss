@@ -1,7 +1,7 @@
 @use "sass:string";
 
 /* Functions */
-@function mlsSVG($icon) {
+@function beyondFseSVG($icon) {
   $base64: null;
 
   @if ($icon == "button-arrow") {
@@ -75,9 +75,9 @@
 }
 
 /* Mixins */
-@mixin mlsIconImage($icon-name, $type: "mask") {
+@mixin beyondFseIconImage($icon-name, $type: "mask") {
   // Get the Base64 string from the function
-  $base64: mlsSVG($icon-name);
+  $base64: beyondFseSVG($icon-name);
 
   // Ensure the Base64 was found
   @if $base64 {
@@ -102,15 +102,15 @@
       background-position: center;
     } @else {
       // Output a warning if an invalid type is passed
-      @warn "Invalid image type '#{$type}' passed to mlsIconImage. Must be 'mask' or 'background'.";
+      @warn "Invalid image type '#{$type}' passed to beyondFseIconImage. Must be 'mask' or 'background'.";
     }
   } @else {
     // Output a warning if the icon name is invalid
-    @warn "Icon '#{$icon-name}' not found in mlsSVG function.";
+    @warn "Icon '#{$icon-name}' not found in beyondFseSVG function.";
   }
 }
 
-@mixin mlsMaskIconSVG(
+@mixin beyondFseMaskIconSVG(
   $icon-name: "button-arrow",
   $type: "mask",
   $width: 1em,
@@ -128,7 +128,7 @@
       }
       content: ""; // Required for pseudo-elements
       display: inline-flex;
-      @include mlsIconImage($icon-name, $type);
+      @include beyondFseIconImage($icon-name, $type);
       width: $width;
       height: $height;
       margin-left: $spacing;
@@ -148,7 +148,7 @@
       }
       content: ""; // Required for pseudo-elements
       display: inline-flex;
-      @include mlsIconImage($icon-name, $type);
+      @include beyondFseIconImage($icon-name, $type);
       width: $width;
       height: $height;
       margin-right: $spacing;
@@ -163,7 +163,7 @@
     background-color: transparent;
     display: inline-flex;
     position: relative;
-    @include mlsIconImage($icon-name, $type);
+    @include beyondFseIconImage($icon-name, $type);
     background-color: currentColor;
     height: $width;
     width: $width;
@@ -203,13 +203,12 @@
 @mixin input-styles {
   font-size: inherit;
   color: var(--wp--preset--color--deep-beyond);
-  border: var(--wp--custom--border--radius--small) solid
+  border: 4px solid
     var(--wp--preset--color--link-vapor);
   border-radius: var(--wp--custom--border--radius--small);
   box-shadow: none;
   outline: none;
-  padding: 14px 20px;
-  min-height: 60px;
+  padding: var(--wp--preset--spacing--small);
 
   // Optional: Add a transition for better user experience
   transition: border-color 0.2s ease-in-out;
@@ -219,7 +218,7 @@
     color: var(--wp--preset--color--deep-beyond);
     line-height: var(--wp--custom--line-height--normal);
     border-style: solid;
-    border-width: var(--wp--custom--border--radius--small);
+    border-width: 4px;
     border-color: var(--wp--preset--color--link-vapor);
     box-shadow: none;
     outline: none;

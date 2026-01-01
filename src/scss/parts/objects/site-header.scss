@@ -24,7 +24,7 @@
         display: none;
       }
 
-      @include mlsMaskIconSVG("menu-arrow", $width: 11px, $height: 7px);
+      @include beyondFseMaskIconSVG("menu-arrow", $width: 11px, $height: 7px);
     }
 
     .wp-block-navigation-item {
@@ -183,7 +183,7 @@
 
         > .wp-block-navigation-item__content {
           > .wp-block-navigation-item__label {
-            @include mlsMaskIconSVG("menu-arrow", $width: 11px, $height: 7px);
+            @include beyondFseMaskIconSVG("menu-arrow", $width: 11px, $height: 7px);
           }
         }
       }

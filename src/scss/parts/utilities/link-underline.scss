@@ -13,8 +13,6 @@ ul:not(.wp-block-navigation, .wp-block-post-template)
   a:where(
     :not(
         .wp-element-button,
-        .mp-no-underline,
-        .mp-text-uppercase,
         .taxonomy-category a
       )
   ),
@@ -22,8 +20,6 @@ ol
   a:where(
     :not(
         .wp-element-button,
-        .mp-no-underline,
-        .mp-text-uppercase,
         .taxonomy-category a
       )
   ),
@@ -31,8 +27,6 @@ p
   a:where(
     :not(
         .wp-element-button,
-        .mp-no-underline,
-        .mp-text-uppercase,
         .taxonomy-category a
       )
   ) {
@@ -49,8 +43,6 @@ ul:not(.wp-block-navigation)
   a:where(
     :not(
         .wp-element-button,
-        .mp-no-underline,
-        .mp-text-uppercase,
         .taxonomy-category a
       )
   ):hover,
@@ -58,8 +50,6 @@ ol
   a:where(
     :not(
         .wp-element-button,
-        .mp-no-underline,
-        .mp-text-uppercase,
         .taxonomy-category a
       )
   ):hover,
@@ -67,8 +57,6 @@ p
   a:where(
     :not(
         .wp-element-button,
-        .mp-no-underline,
-        .mp-text-uppercase,
         .taxonomy-category a
       )
   ):hover {

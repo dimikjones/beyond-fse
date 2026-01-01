@@ -41,7 +41,7 @@
   visibility: hidden;
   transition: opacity var(--wp--custom--transition-timing--default);
 
-  @include mlsMaskIconSVG("mobile-menu-open", $width: 32px, $height: 21px);
+  @include beyondFseMaskIconSVG("mobile-menu-open", $width: 32px, $height: 21px);
 
   html:not(.has-modal-open) & {
     opacity: 1;
@@ -62,7 +62,7 @@
   visibility: hidden;
   transition: opacity var(--wp--custom--transition-timing--default);
 
-  @include mlsMaskIconSVG("mobile-menu-close", $width: 32px, $height: 32px);
+  @include beyondFseMaskIconSVG("mobile-menu-close", $width: 32px, $height: 32px);
 
   html.has-modal-open & {
     opacity: 1;

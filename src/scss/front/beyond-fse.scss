@@ -41,7 +41,6 @@
 /*--------------------------------------------------------------
 # Blocks - editor related styles.
 --------------------------------------------------------------*/
-@import "../parts/blocks/group.scss";
 @import "../parts/blocks/button.scss";
 @import "../parts/blocks/image.scss";
 @import "../parts/blocks/navigation.scss";
@@ -56,6 +55,7 @@
 @import "../parts/components/wp-block-accordion.scss";
 @import "../parts/components/wp-block-code.scss";
 @import "../parts/components/wp-block-post-author.scss";
+@import "../parts/components/wp-block-post-comments-form.scss";
 @import "../parts/components/wp-block-post-template.scss";
 @import "../parts/components/wp-block-post-terms.scss";
 @import "../parts/components/wp-block-post-time-to-read.scss";
