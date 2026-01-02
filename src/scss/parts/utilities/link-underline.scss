@@ -5,6 +5,7 @@ a:where(:not(.wp-element-button)) {
   transition: text-decoration-color var(--wp--custom--transition-timing--default), color var(--wp--custom--transition-timing--default);
 
   &:hover {
+    color: var(--wp--preset--color--link-vapor);
     text-decoration-color: var(--wp--preset--color--link-vapor);
   }
 }

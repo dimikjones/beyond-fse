@@ -1125,6 +1125,7 @@ a:where(:not(.wp-element-button)) {
   text-decoration-color: var(--wp--preset--color--link-vapor);
   transition: text-decoration-color var(--wp--custom--transition-timing--default), color var(--wp--custom--transition-timing--default); }
   a:where(:not(.wp-element-button)):hover {
+    color: var(--wp--preset--color--link-vapor);
     text-decoration-color: var(--wp--preset--color--link-vapor); }
 
 ul:not(.wp-block-navigation, .wp-block-post-template)
