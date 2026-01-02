@@ -45,21 +45,24 @@
 body {
   overflow-x: hidden; }
 
+.bfse-rotate-minus-1deg {
+  transform: rotate(-1deg); }
+
 /*--------------------------------------------------------------
 # Elements - Unclassed HTML elements (type selectors).
 --------------------------------------------------------------*/
 a {
-  color: var(--wp--preset--color--link-vapor);
+  color: var(--wp--preset--color--syntax-heading);
   font-weight: inherit; }
   a:visited {
-    color: var(--wp--preset--color--link-vapor);
+    color: var(--wp--preset--color--syntax-heading);
     font-weight: inherit; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
   a:hover, a:focus, a:active {
-    color: var(--wp--preset--color--link-vapor); }
+    color: var(--wp--preset--color--syntax-heading); }
 
 ul,
 ol {
@@ -307,6 +310,10 @@ textarea {
     font-size: var(--wp--preset--font-size--small);
     font-weight: 400;
     line-height: var(--wp--custom--line-height--tight); }
+  .beyond-fse-footer p a {
+    text-decoration-color: var(--wp--preset--color--warm-insight); }
+    .beyond-fse-footer p a:hover {
+      text-decoration-color: var(--wp--preset--color--warm-insight); }
 
 .beyond-fse-header {
   position: relative;
@@ -713,16 +720,14 @@ input[type="submit"].wp-block-button__link {
     .wp-block-quote.is-style-blockquote p:after {
       content: " ”"; }
 
-.wp-block-site-title {
-  transform: rotate(-1deg); }
-  .wp-block-site-title a {
+.wp-block-site-title a {
+  color: currentColor;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  transition: text-decoration-color var(--wp--custom--transition-timing--default); }
+  .wp-block-site-title a:hover {
     color: currentColor;
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-    transition: text-decoration-color var(--wp--custom--transition-timing--default); }
-    .wp-block-site-title a:hover {
-      color: currentColor;
-      text-decoration-color: currentColor; }
+    text-decoration-color: currentColor; }
 
 /*--------------------------------------------------------------
 # Components - specific UI components.
@@ -807,6 +812,14 @@ input[type="submit"].wp-block-button__link {
 
 .wp-block-post-comments-form .comment-form input:not([type=submit]):not([type=checkbox]):not([type=hidden]) {
   line-height: var(--wp--custom--line-height--normal); }
+
+.wp-block-post-excerpt__more-link {
+  font-weight: 700;
+  font-size: var(--wp--preset--font-size--small);
+  text-transform: uppercase;
+  text-decoration-color: var(--wp--preset--color--warm-insight); }
+  .wp-block-post-excerpt__more-link:hover {
+    color: var(--wp--preset--color--syntax-heading); }
 
 .wp-block-post-template.is-layout-grid {
   gap: 18px;
@@ -933,10 +946,7 @@ input[type="submit"].wp-block-button__link {
         grid-template-columns: repeat(16, minmax(0, 1fr)); } }
   .wp-block-post-template.is-layout-grid .wp-block-post {
     margin: 0;
-    border-radius: var(--wp--custom--border--radius--medium);
-    box-shadow: var(--wp--preset--shadow--double-soft);
-    height: 100%;
-    overflow: hidden; }
+    height: 100%; }
     .wp-block-post-template.is-layout-grid .wp-block-post:where(img) {
       aspect-ratio: 16 / 9;
       height: 100%;
@@ -946,9 +956,7 @@ input[type="submit"].wp-block-button__link {
       object-position: center;
       width: 100%; }
     .wp-block-post-template.is-layout-grid .wp-block-post .bfse-post-article-content {
-      height: 100%;
-      padding: var(--wp--preset--spacing--tiny);
-      background-color: var(--wp--preset--color--white); }
+      height: 100%; }
 
 .wp-block-post-terms {
   display: inline-flex;
@@ -958,15 +966,13 @@ input[type="submit"].wp-block-button__link {
     display: inline-flex;
     margin: 0; }
   .wp-block-post-terms.taxonomy-category a,
-  .wp-block-post-terms.taxonomy-category span, .wp-block-post-terms.taxonomy-kb_category a,
-  .wp-block-post-terms.taxonomy-kb_category span {
+  .wp-block-post-terms.taxonomy-category span {
     display: inline-flex;
     align-items: center;
     background-color: var(--wp--preset--color--warm-insight);
     color: var(--wp--preset--color--deep-beyond);
     border-radius: var(--wp--custom--border--radius--small);
     text-decoration: none;
-    text-transform: uppercase;
     padding: 1px 12.5px;
     font-family: var(--wp--preset--font-family--inter);
     font-size: var(--wp--preset--font-size--small);
@@ -975,13 +981,12 @@ input[type="submit"].wp-block-button__link {
     letter-spacing: 0;
     white-space: nowrap; }
   .wp-block-post-terms.taxonomy-category .wp-block-post-terms__prefix,
-  .wp-block-post-terms.taxonomy-category .wp-block-post-terms__suffix, .wp-block-post-terms.taxonomy-kb_category .wp-block-post-terms__prefix,
-  .wp-block-post-terms.taxonomy-kb_category .wp-block-post-terms__suffix {
+  .wp-block-post-terms.taxonomy-category .wp-block-post-terms__suffix {
     font-family: var(--wp--preset--font-family--inter);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.01em; }
-  .wp-block-post-terms.taxonomy-category .wp-block-post-terms__separator, .wp-block-post-terms.taxonomy-kb_category .wp-block-post-terms__separator {
+  .wp-block-post-terms.taxonomy-category .wp-block-post-terms__separator {
     display: none; }
 
 .wp-block-post-time-to-read {
@@ -1118,7 +1123,7 @@ a:where(:not(.wp-element-button)) {
   text-decoration: underline;
   text-decoration-thickness: 10%;
   text-decoration-color: var(--wp--preset--color--link-vapor);
-  transition: text-decoration-color var(--wp--custom--transition-timing--default); }
+  transition: text-decoration-color var(--wp--custom--transition-timing--default), color var(--wp--custom--transition-timing--default); }
   a:where(:not(.wp-element-button)):hover {
     text-decoration-color: var(--wp--preset--color--link-vapor); }
 
@@ -1149,7 +1154,7 @@ a:where(
   text-decoration-thickness: 0.125rem;
   text-underline-offset: 1.5px;
   text-decoration-skip-ink: auto;
-  transition: text-decoration-color var(--wp--custom--transition-timing--default); }
+  transition: text-decoration-color var(--wp--custom--transition-timing--default), color var(--wp--custom--transition-timing--default); }
 
 ul:not(.wp-block-navigation)
 a:where(

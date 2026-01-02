@@ -7,8 +7,7 @@
     display: inline-flex;
     margin: 0;
   }
-  &.taxonomy-category,
-  &.taxonomy-kb_category {
+  &.taxonomy-category {
     a,
     span:not(.wp-block-post-terms__prefix, .wp-block-post-terms__separator, .wp-block-post-terms__suffix) {
       display: inline-flex;
@@ -17,7 +16,6 @@
       color: var(--wp--preset--color--deep-beyond);
       border-radius: var(--wp--custom--border--radius--small);
       text-decoration: none;
-      text-transform: uppercase;
       padding: 1px 12.5px;
       font-family: var(--wp--preset--font-family--inter);
       font-size: var(--wp--preset--font-size--small);

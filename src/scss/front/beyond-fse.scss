@@ -23,6 +23,7 @@
 # Generic - Ground-zero styles (resets, box-sizing, etc.).
 --------------------------------------------------------------*/
 @import "../parts/generic/box-sizing.scss";
+@import "../parts/generic/custom-classes.scss";
 
 /*--------------------------------------------------------------
 # Elements - Unclassed HTML elements (type selectors).
@@ -56,6 +57,7 @@
 @import "../parts/components/wp-block-code.scss";
 @import "../parts/components/wp-block-post-author.scss";
 @import "../parts/components/wp-block-post-comments-form.scss";
+@import "../parts/components/wp-block-post-excerpt-more-link.scss";
 @import "../parts/components/wp-block-post-template.scss";
 @import "../parts/components/wp-block-post-terms.scss";
 @import "../parts/components/wp-block-post-time-to-read.scss";

@@ -2,7 +2,7 @@ a:where(:not(.wp-element-button)) {
   text-decoration: underline;
   text-decoration-thickness: 10%;
   text-decoration-color: var(--wp--preset--color--link-vapor);
-  transition: text-decoration-color var(--wp--custom--transition-timing--default);
+  transition: text-decoration-color var(--wp--custom--transition-timing--default), color var(--wp--custom--transition-timing--default);
 
   &:hover {
     text-decoration-color: var(--wp--preset--color--link-vapor);
@@ -36,7 +36,7 @@ p
   text-decoration-thickness: 0.125rem;
   text-underline-offset: 1.5px;
   text-decoration-skip-ink: auto;
-  transition: text-decoration-color var(--wp--custom--transition-timing--default);
+  transition: text-decoration-color var(--wp--custom--transition-timing--default), color var(--wp--custom--transition-timing--default);
 }
 
 ul:not(.wp-block-navigation)

@@ -108,7 +108,7 @@
         }
       },
       "transitionTiming": {
-        "default": "0.3s ease-in-out",
+        "default": "0.2s ease-in-out",
         "zero": "0s ease"
       }
     },
@@ -168,17 +168,17 @@
         {
           "name": "Huge",
           "slug": "huge",
-          "size": "clamp(1.944rem, 1.7499rem + 0.9705vw, 2.4414rem)"
+          "size": "clamp(1.75rem, 1.65rem + 0.5vw, 2rem)"
         },
         {
           "name": "Enormus",
           "slug": "enormus",
-          "size": "clamp(2.3328rem, 2.0522rem + 1.4028vw, 3.0518rem)"
+          "size": "clamp(2rem, 1.85rem + 0.75vw, 2.375rem)"
         },
         {
           "name": "Vast",
           "slug": "vast",
-          "size": "clamp(2.5994rem, 2.4031rem + 1.9811vw, 3.4375rem)"
+          "size": "clamp(2.25rem, 2rem + 1.25vw, 2.875rem)"
         }
       ],
       "fontStyle": true,

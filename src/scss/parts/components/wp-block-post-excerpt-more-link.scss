@@ -1,0 +1,10 @@
+.wp-block-post-excerpt__more-link {
+  font-weight: 700;
+  font-size: var(--wp--preset--font-size--small);
+  text-transform: uppercase;
+  text-decoration-color: var(--wp--preset--color--warm-insight);
+
+  &:hover {
+    color: var(--wp--preset--color--syntax-heading);
+  }
+}

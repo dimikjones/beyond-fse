@@ -8,4 +8,13 @@
       line-height: var(--wp--custom--line-height--tight);
     }
   }
+
+  p {
+    a {
+      text-decoration-color: var(--wp--preset--color--warm-insight);
+      &:hover {
+        text-decoration-color: var(--wp--preset--color--warm-insight);
+      }
+    }
+  }
 }

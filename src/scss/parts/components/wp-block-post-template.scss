@@ -8,10 +8,7 @@
     }
     .wp-block-post {
       margin: 0;
-      border-radius: var(--wp--custom--border--radius--medium);
-      box-shadow: var(--wp--preset--shadow--double-soft);
       height: 100%;
-      overflow: hidden;
 
       &:where(img) {
         aspect-ratio: 16 / 9;
@@ -25,8 +22,6 @@
 
       .bfse-post-article-content {
         height: 100%;
-        padding: var(--wp--preset--spacing--tiny);
-        background-color: var(--wp--preset--color--white);
       }
     }
   }

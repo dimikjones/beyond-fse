@@ -1,9 +1,9 @@
 a {
-    color: var(--wp--preset--color--link-vapor);
+    color: var(--wp--preset--color--syntax-heading);
     font-weight: inherit;
 
     &:visited {
-        color: var(--wp--preset--color--link-vapor);
+        color: var(--wp--preset--color--syntax-heading);
         font-weight: inherit;
     }
 
@@ -19,6 +19,6 @@ a {
     &:hover,
     &:focus,
     &:active {
-        color: var(--wp--preset--color--link-vapor)
+        color: var(--wp--preset--color--syntax-heading)
     }
 }
