@@ -1,0 +1,11 @@
+.wp-block-query-pagination {
+  * {
+    font-weight: 600;
+  }
+
+  a {
+    &:hover {
+        text-decoration-color: var(--wp--preset--color--syntax-heading);
+    }
+  }
+}

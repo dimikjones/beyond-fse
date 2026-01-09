@@ -15,10 +15,4 @@ a {
     &:active {
         outline: 0;
     }
-
-    &:hover,
-    &:focus,
-    &:active {
-        color: var(--wp--preset--color--syntax-heading)
-    }
 }

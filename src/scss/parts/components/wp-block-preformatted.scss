@@ -4,4 +4,9 @@ pre,
   padding: 12px;
   font-size: var(--wp--preset--font-size--small);
   font-weight: 700;
+  width: 100%;
+  white-space: pre;
+  overflow-x: scroll;
+  max-width: 100%;
+  padding: var(--wp--preset--spacing--medium);
 }

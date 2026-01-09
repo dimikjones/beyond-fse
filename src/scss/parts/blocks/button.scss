@@ -23,12 +23,6 @@
     &.has-text-align-right {
       justify-content: flex-end;
     }
-
-    &:hover,
-    &:focus {
-      color: var(--wp--preset--color--white);
-      background: var(--wp--preset--color--link-vapor);
-    }
   }
 
   &.wp-block-button__width-100 {
