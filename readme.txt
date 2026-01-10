@@ -1,5 +1,5 @@
 == Beyond FSE ==
-Contributors: qodeinteractive
+Contributors: dimikjones
 Requires at least: 6.9
 Tested up to: 6.9
 Requires PHP: 7.4

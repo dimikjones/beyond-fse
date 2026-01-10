@@ -361,8 +361,6 @@ textarea {
       border-radius: var(--wp--custom--border--radius--medium);
       background-color: transparent;
       transition: background-color var(--wp--custom--transition-timing--default); }
-    .beyond-fse-header .wp-block-navigation .wp-block-navigation__submenu-container > .wp-block-navigation-item:hover:not(.mls-menu-item-label) > .wp-block-navigation-item__content {
-      background-color: #d9e4fd80; }
     .beyond-fse-header .wp-block-navigation .wp-block-navigation__submenu-container > .wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content {
       color: var(--wp--preset--color--deep-beyond);
       text-decoration: underline;
@@ -373,9 +371,6 @@ textarea {
       transition: color var(--wp--custom--transition-timing--default); }
     .beyond-fse-header .wp-block-navigation .wp-block-navigation__submenu-container > .wp-block-navigation-item.current-menu-item:hover > .wp-block-navigation-item__content {
       color: var(--wp--preset--color--syntax-heading); }
-  .beyond-fse-header .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item.mls-menu-item-label .wp-block-navigation-item__content {
-    line-height: 1.25rem;
-    padding: 0; }
 
 .beyond-fse-header .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
   background: rgba(255, 255, 255, 0.95);

@@ -76,12 +76,6 @@
             var(--wp--custom--transition-timing--default);
         }
 
-        &:hover:not(.mls-menu-item-label) {
-          > .wp-block-navigation-item__content {
-            background-color: #d9e4fd80;
-          }
-        }
-
         &.current-menu-item {
           > .wp-block-navigation-item__content {
             color: var(--wp--preset--color--deep-beyond);
@@ -98,14 +92,6 @@
               color: var(--wp--preset--color--syntax-heading);
             }
           }
-        }
-      }
-
-      // sub levels
-      .wp-block-navigation-item.mls-menu-item-label {
-        .wp-block-navigation-item__content {
-          line-height: 1.25rem;
-          padding: 0;
         }
       }
     }
