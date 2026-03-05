@@ -25,3 +25,4 @@ define( 'BEYOND_FSE_ASSETS_ROOT', BEYOND_FSE_ROOT . '/assets' );
 
 // Includes.
 require_once BEYOND_FSE_ROOT_DIR . '/includes/class-assets-loader.php';
+require_once BEYOND_FSE_ROOT_DIR . '/includes/class-theme-supports.php';
