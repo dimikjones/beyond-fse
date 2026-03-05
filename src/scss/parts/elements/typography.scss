@@ -29,22 +29,6 @@ h6 {
     var(--wp--custom--transition-timing--default);
 }
 
-:is(
-    h1:focus a,
-    h1:hover a,
-    h2:focus a,
-    h2:hover a,
-    h3:focus a,
-    h3:hover a,
-    h4:focus a,
-    h4:hover a,
-    h5:focus a,
-    h5:hover a,
-    h6:focus a,
-    h6:hover a
-  ) {
-}
-
 p {
   margin: 1em 0;
 }
