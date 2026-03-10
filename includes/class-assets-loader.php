@@ -40,6 +40,9 @@ class Assets_Loader {
 
 		// Increase maximum size for CSS files to be inlined by WordPress.
 		\add_filter( 'styles_inline_size_limit', array( __CLASS__, 'inline_style_limit' ) );
+
+		// Defer loading of specified styles.
+		\add_filter( 'style_loader_tag', array( __CLASS__, 'assets_preload' ), 10, 2 );
 	}
 
 	/**
@@ -120,6 +123,44 @@ class Assets_Loader {
 		$new_limit = 61440;
 
 		return $new_limit;
+	}
+
+	/**
+	 * Filters the HTML link tags for specific stylesheets to implement preloading.
+	 *
+	 * This method adds a 'rel="preload"' link for critical assets, ensuring they
+	 * are fetched with high priority by the browser to reduce Cumulative Layout Shift (CLS).
+	 *
+	 * @since 0.1.0
+	 * @hooked style_loader_tag
+	 *
+	 * @param string $html   The full HTML link tag for the enqueued style.
+	 * @param string $handle The style's registered handle.
+	 * @return string The modified HTML containing both the preload and the stylesheet tag.
+	 */
+	public static function assets_preload( $html, $handle ) {
+		// Define an array of stylesheet handles that should be preloaded.
+		$preload_handles = array(
+			'beyond-fse-front-style',
+		// Add other critical layout handles here.
+		);
+
+		if ( in_array( $handle, $preload_handles, true ) ) {
+			/**
+			 * Create the preload tag.
+			 * We duplicate the link but change the relation to 'preload'.
+			 */
+			$preload_tag = preg_replace(
+				'/rel=[\'"]stylesheet[\'"]/',
+				'rel="preload" as="style"',
+				$html
+			);
+
+			// Return the preload tag followed by the original stylesheet tag.
+			return $preload_tag . $html;
+		}
+
+		return $html;
 	}
 }
 
