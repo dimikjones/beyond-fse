@@ -17,7 +17,6 @@
   }
 
   .wp-block-navigation {
-
     .wp-block-navigation-item {
       color: var(--wp--preset--color--white);
       background-color: transparent;
@@ -25,7 +24,8 @@
       text-decoration-color: transparent;
       text-decoration-thickness: 3px;
       text-underline-offset: 6px;
-      transition: color var(--wp--custom--transition-timing--default),
+      transition:
+        color var(--wp--custom--transition-timing--default),
         text-decoration-color var(--wp--custom--transition-timing--default);
 
       a {
@@ -101,5 +101,10 @@
         border: none;
       }
     }
+  }
+
+  .wp-block-navigation__responsive-container-close {
+    right: var(--wp--preset--spacing--normal);
+    top: var(--wp--preset--spacing--normal);
   }
 }
