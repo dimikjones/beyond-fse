@@ -67,7 +67,10 @@ class Assets_Loader {
 			BEYOND_FSE_ASSETS_ROOT . '/front.js',
 			array(),
 			BEYOND_FSE_VERSION,
-			true // Load in the footer.
+			array(
+				'strategy'  => 'defer',
+				'in_footer' => true,
+			)
 		);
 	}
 
