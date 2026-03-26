@@ -126,7 +126,7 @@
               "fontFamily": "Inter",
               "fontWeight": "400 900",
               "fontStyle": "normal",
-              "fontDisplay": "swap",
+              "fontDisplay": "optional",
               "src": [
                 "file:./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf"
               ]
