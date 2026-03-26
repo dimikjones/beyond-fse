@@ -32,7 +32,7 @@ class Theme_Supports {
 		\add_filter( 'render_block', array( __CLASS__, 'add_accessible_read_more' ), 10, 2 );
 
 		// Add this line to trigger the font preload.
-		add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 5 );
+		add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
 	}
 
 	/**
@@ -44,7 +44,7 @@ class Theme_Supports {
 	 */
 	public static function preload_fonts() {
 		?>
-		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf' ) ); ?>" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf' ) ); ?>" as="font" type="font/woff2" crossorigin>
 		<?php
 	}
 
