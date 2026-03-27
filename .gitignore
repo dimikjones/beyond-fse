@@ -31,3 +31,10 @@ Session.vim
 # Windows
 Thumbs.db
 Desktop.ini
+
+# AI instructions
+beyond-fse-ai/
+.docs/
+.opencode/
+AGENTS.md
+opencode.json
