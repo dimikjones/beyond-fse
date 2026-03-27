@@ -22,6 +22,7 @@ define( 'BEYOND_FSE_VERSION', \wp_get_theme()->get( 'Version' ) );
 define( 'BEYOND_FSE_ROOT', \get_template_directory_uri() );
 define( 'BEYOND_FSE_ROOT_DIR', \get_template_directory() );
 define( 'BEYOND_FSE_ASSETS_ROOT', BEYOND_FSE_ROOT . '/assets' );
+define( 'BEYOND_FSE_ASSETS_DIR', \get_template_directory() . '/assets' );
 
 // Includes.
 require_once BEYOND_FSE_ROOT_DIR . '/includes/class-assets-loader.php';

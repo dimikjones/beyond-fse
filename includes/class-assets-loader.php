@@ -58,7 +58,7 @@ class Assets_Loader {
 			'beyond-fse-front-style',
 			BEYOND_FSE_ASSETS_ROOT . '/front.css',
 			array(),
-			BEYOND_FSE_VERSION
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.css' ) : BEYOND_FSE_VERSION,
 		);
 
 		// Enqueue theme's main script.
@@ -66,7 +66,7 @@ class Assets_Loader {
 			'beyond-fse-front-script',
 			BEYOND_FSE_ASSETS_ROOT . '/front.js',
 			array(),
-			BEYOND_FSE_VERSION,
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.js' ) : BEYOND_FSE_VERSION,
 			array(
 				'strategy'  => 'defer',
 				'in_footer' => true,
@@ -87,7 +87,7 @@ class Assets_Loader {
 			'beyond-fse-admin-style',
 			BEYOND_FSE_ASSETS_ROOT . '/admin.css',
 			array(),
-			BEYOND_FSE_VERSION
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.css' ) : BEYOND_FSE_VERSION,
 		);
 
 		// Enqueue theme's main script.
@@ -95,7 +95,7 @@ class Assets_Loader {
 			'beyond-fse-admin-script',
 			BEYOND_FSE_ASSETS_ROOT . '/admin.js',
 			array(),
-			BEYOND_FSE_VERSION,
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.js' ) : BEYOND_FSE_VERSION,
 			true // Load in the footer.
 		);
 	}
