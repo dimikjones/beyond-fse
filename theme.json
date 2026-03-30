@@ -118,17 +118,17 @@
       "defaultFontSizes": false,
       "fontFamilies": [
         {
-          "fontFamily": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
-          "name": "Inter",
-          "slug": "inter",
+          "fontFamily": "\"Public Sans\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+          "name": "Public Sans",
+          "slug": "public-sans",
           "fontFace": [
             {
-              "fontFamily": "Inter",
-              "fontWeight": "400 900",
+              "fontFamily": "Public Sans",
+              "fontWeight": "400 500 600 900",
               "fontStyle": "normal",
               "fontDisplay": "optional",
               "src": [
-                "file:./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf"
+                "file:./assets/fonts/PublicSans-VariableFont_wght.woff2"
               ]
             }
           ]
@@ -199,7 +199,7 @@
       "blockGap": "var(--wp--preset--spacing--normal)"
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--inter)",
+      "fontFamily": "var(--wp--preset--font-family--public-sans)",
       "fontSize": "var(--wp--preset--font-size--normal)",
       "lineHeight": "var(--wp--custom--line-height--normal)"
     },
@@ -264,7 +264,7 @@
       },
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--inter)",
+          "fontFamily": "var(--wp--preset--font-family--public-sans)",
           "fontWeight": "700"
         }
       },
@@ -292,7 +292,7 @@
           "width": "0"
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--inter)",
+          "fontFamily": "var(--wp--preset--font-family--public-sans)",
           "fontSize": "var(--wp--preset--font-size--normal)",
           "fontWeight": "600",
           "lineHeight": "var(--wp--custom--line-height--tight)"
