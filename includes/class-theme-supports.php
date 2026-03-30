@@ -44,7 +44,7 @@ class Theme_Supports {
 	 */
 	public static function preload_fonts() {
 		?>
-		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf' ) ); ?>" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/PublicSans-VariableFont_wght.woff2' ) ); ?>" as="font" type="font/woff2" crossorigin>
 		<?php
 	}
 
