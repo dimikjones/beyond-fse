@@ -38,3 +38,6 @@ beyond-fse-ai/
 .opencode/
 AGENTS.md
 opencode.json
+
+# Distribution package
+/build/
