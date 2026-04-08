@@ -82,15 +82,7 @@ class Assets_Loader {
 	 * @return void
 	 */
 	public static function include_admin_assets() {
-		// Enqueue theme's main style.
-		\wp_enqueue_style(
-			'beyond-fse-admin-style',
-			BEYOND_FSE_ASSETS_ROOT . '/admin.css',
-			array(),
-			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.css' ) : BEYOND_FSE_VERSION,
-		);
-
-		// Enqueue theme's main script.
+		// Enqueue theme's admin script.
 		\wp_enqueue_script(
 			'beyond-fse-admin-script',
 			BEYOND_FSE_ASSETS_ROOT . '/admin.js',
@@ -110,6 +102,9 @@ class Assets_Loader {
 	public static function add_theme_editor_styles() {
 		// Loads the frontend theme styles into the block editor to match the styling on the front end.
 		\add_editor_style( 'assets/front.css' );
+
+		// Loads admin specific editor overrides.
+		\add_editor_style( 'assets/admin.css' );
 	}
 
 	/**
