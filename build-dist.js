@@ -52,6 +52,9 @@ const INCLUDE_PATTERNS = [
 const EXCLUDE_PATTERNS = [
   // Build directory itself (must be first to prevent recursion)
   'build/**',
+
+  // Ignore source maps
+  '**/*.map',
   
   // Git and GitHub files
   '.git/**',
