@@ -56,17 +56,17 @@ class Assets_Loader {
 		// Enqueue theme's main style.
 		\wp_enqueue_style(
 			'beyond-fse-front-style',
-			BEYOND_FSE_ASSETS_ROOT . '/front.css',
+			BEYOND_FSE_ASSETS_ROOT . '/front.min.css',
 			array(),
-			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.css' ) : BEYOND_FSE_VERSION,
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.css' ) : BEYOND_FSE_VERSION,
 		);
 
 		// Enqueue theme's main script.
 		\wp_enqueue_script(
 			'beyond-fse-front-script',
-			BEYOND_FSE_ASSETS_ROOT . '/front.js',
+			BEYOND_FSE_ASSETS_ROOT . '/front.min.js',
 			array(),
-			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.js' ) : BEYOND_FSE_VERSION,
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) : BEYOND_FSE_VERSION,
 			array(
 				'strategy'  => 'defer',
 				'in_footer' => true,
@@ -85,9 +85,9 @@ class Assets_Loader {
 		// Enqueue theme's admin script.
 		\wp_enqueue_script(
 			'beyond-fse-admin-script',
-			BEYOND_FSE_ASSETS_ROOT . '/admin.js',
+			BEYOND_FSE_ASSETS_ROOT . '/admin.min.js',
 			array(),
-			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.js' ) : BEYOND_FSE_VERSION,
+			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) : BEYOND_FSE_VERSION,
 			true // Load in the footer.
 		);
 	}
@@ -101,10 +101,10 @@ class Assets_Loader {
 	 */
 	public static function add_theme_editor_styles() {
 		// Loads the frontend theme styles into the block editor to match the styling on the front end.
-		\add_editor_style( 'assets/front.css' );
+		\add_editor_style( 'assets/front.min.css' );
 
 		// Loads admin specific editor overrides.
-		\add_editor_style( 'assets/admin.css' );
+		\add_editor_style( 'assets/admin.min.css' );
 	}
 
 	/**
