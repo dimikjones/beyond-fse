@@ -38,3 +38,9 @@ beyond-fse-ai/
 .opencode/
 AGENTS.md
 opencode.json
+
+# Distribution package
+/build/
+
+# Ignore source maps only
+assets/*.map

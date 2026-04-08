@@ -1,0 +1,1 @@
+.editor-visual-editor__post-title-wrapper>:where(:not(.alignleft):not(.alignright):not(.alignfull)){text-align:center}
