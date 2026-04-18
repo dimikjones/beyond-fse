@@ -328,7 +328,7 @@ textarea {
     width: 100%; }
 
 .beyond-fse-header .wp-block-navigation .wp-block-navigation-item {
-  color: var(--wp--preset--color--white);
+  color: var(--wp--preset--color--header-navigation);
   background-color: transparent;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -338,7 +338,7 @@ textarea {
   .beyond-fse-header .wp-block-navigation .wp-block-navigation-item a {
     color: currentColor; }
   .beyond-fse-header .wp-block-navigation .wp-block-navigation-item:hover {
-    color: var(--wp--preset--color--white); }
+    color: var(--wp--preset--color--header-navigation); }
 
 .beyond-fse-header .wp-block-navigation > .wp-block-navigation-item:hover {
   text-decoration-color: var(--wp--preset--color--link-vapor); }

@@ -18,7 +18,7 @@
 
   .wp-block-navigation {
     .wp-block-navigation-item {
-      color: var(--wp--preset--color--white);
+      color: var(--wp--preset--color--header-navigation);
       background-color: transparent;
       text-decoration: underline;
       text-decoration-color: transparent;
@@ -32,7 +32,7 @@
         color: currentColor;
       }
       &:hover {
-        color: var(--wp--preset--color--white);
+        color: var(--wp--preset--color--header-navigation);
       }
     }
 

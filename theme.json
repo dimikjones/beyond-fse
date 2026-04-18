@@ -90,6 +90,11 @@
         },
         {
           "color": "#ffffff",
+          "name": "Header Navigation",
+          "slug": "header-navigation"
+        },
+        {
+          "color": "#ffffff",
           "name": "White",
           "slug": "white"
         }
