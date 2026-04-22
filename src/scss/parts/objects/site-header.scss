@@ -2,7 +2,7 @@
   .wp-block-navigation:not(.has-background)
     .wp-block-navigation__responsive-container {
     &.is-menu-open {
-      background-color: var(--wp--preset--color--syntax-heading);
+      background-color: var(--wp--preset--color--surface-second);
       padding-left: var(--wp--style--root--padding-right);
       padding-right: var(--wp--style--root--padding-right);
 
@@ -30,6 +30,7 @@
     .wp-block-navigation__submenu-icon {
       width: 1em;
       height: 1em;
+      color: var(--wp--preset--color--header-navigation);
     }
 
     @media (min-width: 782px) {

@@ -89,6 +89,11 @@
           "slug": "warm-insight"
         },
         {
+          "color": "#000b1c",
+          "name": "Warm Reverse",
+          "slug": "warm-reverse"
+        },
+        {
           "color": "#ffffff",
           "name": "Header Navigation",
           "slug": "header-navigation"
@@ -97,6 +102,11 @@
           "color": "#ffffff",
           "name": "Surface Prime",
           "slug": "surface-prime"
+        },
+        {
+          "color": "#004182",
+          "name": "Surface Second",
+          "slug": "surface-second"
         },
         {
           "color": "#ffffff",
