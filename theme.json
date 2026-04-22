@@ -95,6 +95,11 @@
         },
         {
           "color": "#ffffff",
+          "name": "Surface Prime",
+          "slug": "surface-prime"
+        },
+        {
+          "color": "#ffffff",
           "name": "White",
           "slug": "white"
         }
@@ -132,9 +137,7 @@
               "fontWeight": "400 500 600 900",
               "fontStyle": "normal",
               "fontDisplay": "optional",
-              "src": [
-                "file:./assets/fonts/PublicSans-VariableFont_wght.woff2"
-              ]
+              "src": ["file:./assets/fonts/PublicSans-VariableFont_wght.woff2"]
             }
           ]
         },
@@ -209,7 +212,7 @@
       "lineHeight": "var(--wp--custom--line-height--normal)"
     },
     "color": {
-      "background": "var(--wp--preset--color--white)",
+      "background": "var(--wp--preset--color--surface-prime)",
       "text": "var(--wp--preset--color--syntax-heading)"
     },
     "elements": {
