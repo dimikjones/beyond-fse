@@ -152,6 +152,20 @@
           ]
         },
         {
+          "fontFamily": "Albert Sans, sans-serif",
+          "name": "Albert Sans",
+          "slug": "albert-sans",
+          "fontFace": [
+            {
+              "fontFamily": "Albert Sans",
+              "fontWeight": "400 600 700 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/AlbertSans-VariableFont_wght.woff2"]
+            }
+          ]
+        },
+        {
           "fontFamily": "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Mono', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
           "name": "Code",
           "slug": "code"
