@@ -25,7 +25,7 @@
           "name": "Warm Insight",
           "slug": "warm-insight"
         },
-		{
+        {
           "color": "#f7f7f7",
           "name": "Warm Reverse",
           "slug": "warm-reverse"
@@ -51,6 +51,21 @@
           "slug": "white"
         }
       ]
+    },
+    "custom": {
+      "fontPrimary": "var(--wp--preset--font-family--albert-sans)"
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--custom--font-primary)"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--custom--font-primary)"
+        }
+      }
     }
   }
 }
