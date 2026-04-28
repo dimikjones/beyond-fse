@@ -186,7 +186,7 @@
     }
     &:not(.has-background) {
       .wp-block-navigation__submenu-container {
-        background: rgba(255, 255, 255, 0.95);
+        background: var(--wp--preset--color--surface-prime);
         border: none;
       }
     }
