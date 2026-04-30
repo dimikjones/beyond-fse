@@ -1,47 +1,47 @@
 {
   "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
   "version": 3,
-  "title": "Devel",
+  "title": "Jazzos",
   "settings": {
     "color": {
       "palette": [
         {
-          "color": "#929598",
+          "color": "#a09abb",
           "name": "Deep Beyond",
           "slug": "deep-beyond"
         },
         {
-          "color": "#c9d1d9",
+          "color": "#f0eeff",
           "name": "Syntax Heading",
           "slug": "syntax-heading"
         },
         {
-          "color": "#CB6C5B",
+          "color": "#ff2d78",
           "name": "Link Vapor",
           "slug": "link-vapor"
         },
         {
-          "color": "#f9826c",
+          "color": "#00e5cc",
           "name": "Warm Insight",
           "slug": "warm-insight"
         },
         {
-          "color": "#0a0b0c",
+          "color": "#1c1c3a",
           "name": "Warm Reverse",
           "slug": "warm-reverse"
         },
         {
-          "color": "#929598",
+          "color": "#c4c0e0",
           "name": "Header Navigation",
           "slug": "header-navigation"
         },
         {
-          "color": "#0d1117",
+          "color": "#160d18",
           "name": "Surface Prime",
           "slug": "surface-prime"
         },
         {
-          "color": "#0d1117",
+          "color": "#0a0a18",
           "name": "Surface Second",
           "slug": "surface-second"
         },
@@ -53,7 +53,7 @@
       ]
     },
     "custom": {
-      "fontPrimary": "var(--wp--preset--font-family--bitter)"
+      "fontPrimary": "var(--wp--preset--font-family--space-grotesk)"
     }
   },
   "styles": {

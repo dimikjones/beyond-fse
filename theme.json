@@ -145,7 +145,7 @@
           "fontFace": [
             {
               "fontFamily": "Public Sans",
-              "fontWeight": "400 500 600 900",
+              "fontWeight": "400 500 600 700 900",
               "fontStyle": "normal",
               "fontDisplay": "optional",
               "src": ["file:./assets/fonts/PublicSans-VariableFont_wght.woff2"]
@@ -177,6 +177,20 @@
               "fontStyle": "normal",
               "fontDisplay": "swap",
               "src": ["file:./assets/fonts/Bitter-VariableFont_wght.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Space Grotesk, sans-serif",
+          "name": "Space Grotesk",
+          "slug": "space-grotesk",
+          "fontFace": [
+            {
+              "fontFamily": "Space Grotesk",
+              "fontWeight": "400 600 700 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2"]
             }
           ]
         },
