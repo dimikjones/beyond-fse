@@ -13,11 +13,11 @@
       display: inline-flex;
       align-items: center;
       background-color: var(--wp--preset--color--warm-insight);
-      color: var(--wp--preset--color--deep-beyond);
+      color: var(--wp--preset--color--warm-reverse);
       border-radius: var(--wp--custom--border--radius--small);
       text-decoration: none;
       padding: 1px 12.5px;
-      font-family: var(--wp--preset--font-family--public-sans);
+      font-family: var(--wp--custom--font-primary);
       font-size: var(--wp--preset--font-size--small);
       font-weight: 700;
       line-height: var(--wp--custom--line-height--normal);
@@ -27,7 +27,7 @@
 
     .wp-block-post-terms__prefix,
     .wp-block-post-terms__suffix {
-      font-family: var(--wp--preset--font-family--public-sans);
+      font-family: var(--wp--custom--font-primary);
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: -0.01em;

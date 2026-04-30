@@ -89,6 +89,26 @@
           "slug": "warm-insight"
         },
         {
+          "color": "#000b1c",
+          "name": "Warm Reverse",
+          "slug": "warm-reverse"
+        },
+        {
+          "color": "#ffffff",
+          "name": "Header Navigation",
+          "slug": "header-navigation"
+        },
+        {
+          "color": "#ffffff",
+          "name": "Surface Prime",
+          "slug": "surface-prime"
+        },
+        {
+          "color": "#004182",
+          "name": "Surface Second",
+          "slug": "surface-second"
+        },
+        {
           "color": "#ffffff",
           "name": "White",
           "slug": "white"
@@ -107,6 +127,7 @@
           "large": "18px"
         }
       },
+      "fontPrimary": "var(--wp--preset--font-family--public-sans)",
       "transitionTiming": {
         "default": "0.2s ease-in-out",
         "zero": "0s ease"
@@ -124,12 +145,52 @@
           "fontFace": [
             {
               "fontFamily": "Public Sans",
-              "fontWeight": "400 500 600 900",
+              "fontWeight": "400 500 600 700 900",
               "fontStyle": "normal",
               "fontDisplay": "optional",
-              "src": [
-                "file:./assets/fonts/PublicSans-VariableFont_wght.woff2"
-              ]
+              "src": ["file:./assets/fonts/PublicSans-VariableFont_wght.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Albert Sans, sans-serif",
+          "name": "Albert Sans",
+          "slug": "albert-sans",
+          "fontFace": [
+            {
+              "fontFamily": "Albert Sans",
+              "fontWeight": "400 600 700 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/AlbertSans-VariableFont_wght.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Bitter, serif",
+          "name": "Bitter",
+          "slug": "bitter",
+          "fontFace": [
+            {
+              "fontFamily": "Bitter",
+              "fontWeight": "400 600 700 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/Bitter-VariableFont_wght.woff2"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Space Grotesk, sans-serif",
+          "name": "Space Grotesk",
+          "slug": "space-grotesk",
+          "fontFace": [
+            {
+              "fontFamily": "Space Grotesk",
+              "fontWeight": "400 600 700 900",
+              "fontStyle": "normal",
+              "fontDisplay": "swap",
+              "src": ["file:./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2"]
             }
           ]
         },
@@ -199,12 +260,12 @@
       "blockGap": "var(--wp--preset--spacing--normal)"
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--public-sans)",
+      "fontFamily": "var(--wp--custom--font-primary)",
       "fontSize": "var(--wp--preset--font-size--normal)",
       "lineHeight": "var(--wp--custom--line-height--normal)"
     },
     "color": {
-      "background": "var(--wp--preset--color--white)",
+      "background": "var(--wp--preset--color--surface-prime)",
       "text": "var(--wp--preset--color--syntax-heading)"
     },
     "elements": {
@@ -264,7 +325,7 @@
       },
       "heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--public-sans)",
+          "fontFamily": "var(--wp--custom--font-primary)",
           "fontWeight": "700"
         }
       },
@@ -292,7 +353,7 @@
           "width": "0"
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--public-sans)",
+          "fontFamily": "var(--wp--custom--font-primary)",
           "fontSize": "var(--wp--preset--font-size--normal)",
           "fontWeight": "600",
           "lineHeight": "var(--wp--custom--line-height--tight)"

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "title": "Devel",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#929598",
+          "name": "Deep Beyond",
+          "slug": "deep-beyond"
+        },
+        {
+          "color": "#c9d1d9",
+          "name": "Syntax Heading",
+          "slug": "syntax-heading"
+        },
+        {
+          "color": "#CB6C5B",
+          "name": "Link Vapor",
+          "slug": "link-vapor"
+        },
+        {
+          "color": "#f9826c",
+          "name": "Warm Insight",
+          "slug": "warm-insight"
+        },
+        {
+          "color": "#0a0b0c",
+          "name": "Warm Reverse",
+          "slug": "warm-reverse"
+        },
+        {
+          "color": "#929598",
+          "name": "Header Navigation",
+          "slug": "header-navigation"
+        },
+        {
+          "color": "#0d1117",
+          "name": "Surface Prime",
+          "slug": "surface-prime"
+        },
+        {
+          "color": "#0d1117",
+          "name": "Surface Second",
+          "slug": "surface-second"
+        },
+        {
+          "color": "#ffffff",
+          "name": "White",
+          "slug": "white"
+        }
+      ]
+    },
+    "custom": {
+      "fontPrimary": "var(--wp--preset--font-family--bitter)"
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--custom--font-primary)"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--custom--font-primary)"
+        }
+      }
+    }
+  }
+}
