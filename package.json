@@ -8,8 +8,9 @@
   "license": "ISC",
   "scripts": {
     "clean": "if exist assets\\*.js del assets\\*.js && if exist assets\\*.css del assets\\*.css",
+    "make-pot": "node make-pot.js",
     "build-dev": "webpack --mode development",
-    "build-prod": "webpack --mode production",
+    "build-prod": "webpack --mode production && npm run make-pot",
     "build-all": "npm run clean && npm run build-prod && npm run build-dev",
     "build-dist": "node build-dist.js"
   },

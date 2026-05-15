@@ -44,6 +44,7 @@ const INCLUDE_PATTERNS = [
   '**/*.woff2',
   '**/*.ttf',
   '**/*.eot',
+  '**/*.pot',
   // Specific files without extensions
   'LICENSE',
 ];
@@ -73,6 +74,7 @@ const EXCLUDE_PATTERNS = [
   'webpack.config.js',
   'babel.config.js',
   'build-dist.js',
+  'make-pot.js',
   
   // Development documentation and tools
   '.docs/**',
