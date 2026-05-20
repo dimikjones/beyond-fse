@@ -101,7 +101,7 @@ class Blocks_Manager {
 
 		foreach ( $block_styles as $block => $styles ) {
 			foreach ( $styles as $style_name => $style_label ) {
-				register_block_style(
+				\register_block_style(
 					$block,
 					array(
 						'name'  => $style_name,
