@@ -468,6 +468,48 @@ textarea {
 /*--------------------------------------------------------------
 # Blocks - editor related styles.
 --------------------------------------------------------------*/
+ul.wp-block-list.is-style-list-check-circle:not(ol),
+ul.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol),
+ol.wp-block-list.is-style-list-check-circle:not(ol),
+ol.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) {
+  padding-inline-start: 0px !important;
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none; }
+  ul.wp-block-list.is-style-list-check-circle:not(ol) li,
+  ul.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li,
+  ol.wp-block-list.is-style-list-check-circle:not(ol) li,
+  ol.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li {
+    position: relative;
+    padding-left: calc(var(--wp--preset--spacing--medium) + 0.5rem); }
+    ul.wp-block-list.is-style-list-check-circle:not(ol) li:before,
+    ul.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li:before,
+    ol.wp-block-list.is-style-list-check-circle:not(ol) li:before,
+    ol.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li:before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 0.2em;
+      background: var(--wp--preset--color--warm-insight);
+      color: var(--wp--preset--color--syntax-heading);
+      border-radius: 100%;
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      font-size: var(--wp--preset--font-size--normal); }
+    @media (max-width: 781px) {
+      ul.wp-block-list.is-style-list-check-circle:not(ol) li,
+      ul.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li,
+      ol.wp-block-list.is-style-list-check-circle:not(ol) li,
+      ol.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li {
+        padding-left: calc(var(--wp--preset--spacing--medium) + 0.8rem); }
+        ul.wp-block-list.is-style-list-check-circle:not(ol) li:before,
+        ul.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li:before,
+        ol.wp-block-list.is-style-list-check-circle:not(ol) li:before,
+        ol.wp-block-list.is-style-list-check-circle ul.wp-block-list:not(ol) li:before {
+          top: 0.05em; } }
+
 .wp-block-button .wp-block-button__link {
   display: inline-flex;
   justify-content: center;
