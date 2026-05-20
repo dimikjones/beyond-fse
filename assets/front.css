@@ -688,6 +688,9 @@ input[type="submit"].wp-block-button__link {
   max-width: 100%;
   box-sizing: border-box;
   background: var(--wp--preset--color--warm-insight); }
+  .wp-block-code.is-style-code-invert {
+    background-color: var(--wp--preset--color--syntax-heading);
+    color: var(--wp--preset--color--warm-insight); }
 
 .wp-block-post-author__content {
   display: flex;
@@ -887,6 +890,10 @@ pre,
   overflow-x: scroll;
   max-width: 100%;
   padding: var(--wp--preset--spacing--medium); }
+  pre.is-style-preformatted-invert,
+  .wp-block-preformatted.is-style-preformatted-invert {
+    background-color: var(--wp--preset--color--syntax-heading);
+    color: var(--wp--preset--color--warm-insight); }
 
 .wp-block-pullquote {
   font-size: var(--wp--preset--font-size--large) !important; }

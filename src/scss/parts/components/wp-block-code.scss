@@ -4,4 +4,9 @@
   max-width: 100%;
   box-sizing: border-box;
   background: var(--wp--preset--color--warm-insight);
+
+  &.is-style-code-invert {
+    background-color: var(--wp--preset--color--syntax-heading);
+    color: var(--wp--preset--color--warm-insight);
+  }
 }

@@ -88,14 +88,14 @@ class Blocks_Manager {
 				'list-check-circle' => __( 'Check Circle', 'beyond-fse' ),
 			),
 			'core/code'         => array(
-				'dark-code' => __( 'Invert', 'beyond-fse' ),
+				'code-invert' => __( 'Invert', 'beyond-fse' ),
 			),
 			'core/separator'    => array(
 				'separator-dotted' => __( 'Dotted', 'beyond-fse' ),
 				'separator-thin'   => __( 'Thin', 'beyond-fse' ),
 			),
 			'core/preformatted' => array(
-				'preformatted-dark' => __( 'Invert', 'beyond-fse' ),
+				'preformatted-invert' => __( 'Invert', 'beyond-fse' ),
 			),
 		);
 
