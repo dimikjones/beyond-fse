@@ -1,179 +1,73 @@
 /**
- * Modifies wp editor by unregistering some blocks styles.
- * We wrap it in wp.domReady to ensure the blocks API is loaded.
+ * Author Name Heading Tag functionality
+ * Adds tagName attribute to core/post-author-name block
  */
-wp.domReady(() => {
-  if (wp.blocks && wp.blocks.unregisterBlockStyle) {
-    wp.blocks.unregisterBlockStyle("core/button", "outline");
-    wp.blocks.unregisterBlockStyle("core/quote", "plain");
-    wp.blocks.unregisterBlockStyle("core/separator", "dots");
-    wp.plugins.unregisterPlugin("block-directory");
-  }
-});
-
-// Filter to register the new 'displayIcon', 'leftIcon', and 'iconName' attributes and attach classes on save.
 wp.hooks.addFilter(
   "blocks.registerBlockType",
-  "beyond-fse/button-extension-attributes",
-  (settings) => {
-    if (settings.name !== "core/button") {
+  "beyond-fse/author-name-tag-attribute",
+  (settings, name) => {
+    if (name !== "core/post-author-name") {
       return settings;
     }
 
-    // Add the new attributes
+    // Add tagName attribute
     if (!settings.attributes) {
       settings.attributes = {};
     }
-    settings.attributes.displayIcon = {
-      type: "boolean",
-      default: false,
-    };
-    settings.attributes.leftIcon = {
-      type: "boolean",
-      default: false,
-    };
-    settings.attributes.iconName = {
+    settings.attributes.tagName = {
       type: "string",
-      default: "",
-    };
-
-    // Override the save function to add the appropriate classes
-    const originalSave = settings.save;
-    settings.save = (props) => {
-      const wrapperProps = originalSave(props);
-      const { displayIcon, leftIcon, iconName } = props.attributes;
-
-      if (displayIcon) {
-        let classes = [];
-        
-        // Always add 'has-icon' when displayIcon is true
-        classes.push('has-icon');
-        
-        // Add 'icon-left' if leftIcon is true
-        if (leftIcon) {
-          classes.push('icon-left');
-        }
-        
-        // Add 'has-icon-${iconName}' if iconName is not empty
-        if (iconName && iconName.trim() !== '') {
-          classes.push(`has-icon-${iconName}`);
-        }
-        
-        if (classes.length > 0) {
-          const newClassName = wrapperProps.props.className
-            ? `${wrapperProps.props.className} ${classes.join(' ')}`
-            : classes.join(' ');
-
-          // Note: This relies on the core block's save implementation
-          // accepting the className on the wrapper (which core/button does).
-          wrapperProps.props.className = newClassName;
-        }
-      }
-      return wrapperProps;
+      default: "div",
     };
 
     return settings;
   }
 );
 
-// Filter to add the 'Display Icon' toggle control and additional icon settings to the editor sidebar.
+/**
+ * Author Name Heading Tag UI Control
+ * Adds tagName selector to core/post-author-name block settings
+ */
 wp.hooks.addFilter(
   "editor.BlockEdit",
-  "beyond-fse/button-extension-controls",
+  "beyond-fse/author-name-tag-control",
   wp.compose.createHigherOrderComponent((BlockEdit) => {
     return (props) => {
-      if (props.name !== "core/button") {
+      if (props.name !== "core/post-author-name") {
         return <BlockEdit {...props} />;
       }
 
       const { attributes, setAttributes } = props;
-      const { displayIcon, leftIcon, iconName } = attributes;
+      const { tagName } = attributes;
 
       return (
         <>
           <BlockEdit {...props} />
           <wp.blockEditor.InspectorControls>
             <wp.components.PanelBody
-              title={wp.i18n.__("Icon Settings", "beyond-fse")}
-              initialOpen={false} // Changed to false to keep it tidy
+              title={wp.i18n.__("Heading Tag", "beyond-fse")}
+              initialOpen={false}
             >
-              <wp.components.ToggleControl
-                label={wp.i18n.__("Display Icon", "beyond-fse")}
-                checked={displayIcon}
-                onChange={(value) => setAttributes({ displayIcon: value })}
+              <wp.components.SelectControl
+                label={wp.i18n.__("Tag Name", "beyond-fse")}
+                value={tagName || "div"}
+                options={[
+                  { label: wp.i18n.__("Div", "beyond-fse"), value: "div" },
+                  { label: wp.i18n.__("Heading 1", "beyond-fse"), value: "h1" },
+                  { label: wp.i18n.__("Heading 2", "beyond-fse"), value: "h2" },
+                  { label: wp.i18n.__("Heading 3", "beyond-fse"), value: "h3" },
+                  { label: wp.i18n.__("Heading 4", "beyond-fse"), value: "h4" },
+                  { label: wp.i18n.__("Heading 5", "beyond-fse"), value: "h5" },
+                  { label: wp.i18n.__("Heading 6", "beyond-fse"), value: "h6" },
+                ]}
+                onChange={(value) => setAttributes({ tagName: value })}
+                help={wp.i18n.__("Select the HTML tag for the author name", "beyond-fse")}
+                __nextHasNoMarginBottom={ true }
+						    __next40pxDefaultSize={ true }
               />
-              
-              {displayIcon && (
-                <>
-                  <wp.components.ToggleControl
-                    label={wp.i18n.__("Left Icon", "beyond-fse")}
-                    checked={leftIcon}
-                    onChange={(value) => setAttributes({ leftIcon: value })}
-                    help={wp.i18n.__("Display icon on the left side", "beyond-fse")}
-                  />
-                  
-                  <wp.components.SelectControl
-                    label={wp.i18n.__("Icon Type", "beyond-fse")}
-                    value={iconName}
-                    options={[
-                      { label: wp.i18n.__("None", "beyond-fse"), value: "" },
-                      { label: wp.i18n.__("Arrow", "beyond-fse"), value: "arrow" },
-                      { label: wp.i18n.__("Plus", "beyond-fse"), value: "plus" },
-                      { label: wp.i18n.__("Link", "beyond-fse"), value: "link" },
-                      { label: wp.i18n.__("Tag", "beyond-fse"), value: "tag" },
-                    ]}
-                    onChange={(value) => setAttributes({ iconName: value })}
-                    help={wp.i18n.__("Select the icon to display", "beyond-fse")}
-                  />
-                </>
-              )}
             </wp.components.PanelBody>
           </wp.blockEditor.InspectorControls>
         </>
       );
     };
-  }, "withIconControl")
-);
-
-// Filter to add the icon classes to the block wrapper in the editor.
-wp.hooks.addFilter(
-  "editor.BlockListBlock",
-  "beyond-fse/button-extension-editor-class",
-  wp.compose.createHigherOrderComponent((BlockListBlock) => {
-    return (props) => {
-      const { name, attributes } = props;
-
-      if (name !== "core/button") {
-        return <BlockListBlock {...props} />;
-      }
-
-      const { displayIcon, leftIcon, iconName } = attributes;
-      let newClassName = props.className;
-
-      if (displayIcon) {
-        let classes = [];
-        
-        // Always add 'has-icon' when displayIcon is true
-        classes.push('has-icon');
-        
-        // Add 'icon-left' if leftIcon is true
-        if (leftIcon) {
-          classes.push('icon-left');
-        }
-        
-        // Add 'has-icon-${iconName}' if iconName is not empty
-        if (iconName && iconName.trim() !== '') {
-          classes.push(`has-icon-${iconName}`);
-        }
-        
-        if (classes.length > 0) {
-          newClassName = newClassName 
-            ? `${newClassName} ${classes.join(' ')}`
-            : classes.join(' ');
-        }
-      }
-
-      return <BlockListBlock {...props} className={newClassName} />;
-    };
-  }, "withIconEditorClass")
+  }, "withAuthorNameTagControl")
 );
