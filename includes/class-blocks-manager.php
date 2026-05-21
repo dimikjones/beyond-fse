@@ -91,8 +91,9 @@ class Blocks_Manager {
 				'code-invert' => __( 'Invert', 'beyond-fse' ),
 			),
 			'core/separator'    => array(
-				'separator-dotted' => __( 'Dotted', 'beyond-fse' ),
-				'separator-thin'   => __( 'Thin', 'beyond-fse' ),
+				'separator-stripes'   => __( 'Stripes', 'beyond-fse' ),
+				'separator-thin'      => __( 'Thin', 'beyond-fse' ),
+				'separator-thin-wide' => __( 'Thin Wide', 'beyond-fse' ),
 			),
 			'core/preformatted' => array(
 				'preformatted-invert' => __( 'Invert', 'beyond-fse' ),
