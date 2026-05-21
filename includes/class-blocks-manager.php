@@ -34,6 +34,9 @@ class Blocks_Manager {
 
 		// Hook to extend core/post-author-name block with custom tag.
 		\add_filter( 'render_block', array( __CLASS__, 'render_author_name_with_tag' ), 10, 2 );
+
+		// Hook to register pattern categories.
+		\add_action( 'init', array( __CLASS__, 'register_pattern_categories' ), 9 );
 	}
 
 	/**
@@ -110,6 +113,29 @@ class Blocks_Manager {
 					)
 				);
 			}
+		}
+	}
+
+	/**
+	 * Registers block pattern categories.
+	 *
+	 * @since 0.1.0
+	 *
+	 * @return void
+	 */
+	public static function register_pattern_categories() {
+		if ( ! function_exists( 'register_block_pattern_category' ) ) {
+			return;
+		}
+
+		$block_pattern_categories = array(
+			'beyond-fse/pages' => array(
+				'label' => __( 'Pages', 'beyond-fse' ),
+			),
+		);
+
+		foreach ( $block_pattern_categories as $name => $properties ) {
+			\register_block_pattern_category( $name, $properties );
 		}
 	}
 }
