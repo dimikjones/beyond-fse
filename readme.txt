@@ -50,7 +50,13 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
+=== Images ===
+
+Pink-Neon-Now-Sign-768x1024.webp - Copyright Nicholas S. via Pexels
+License: Pexels License - https://www.pexels.com/license/
+Source: https://www.pexels.com/photo/pink-neon-word-sign-6175330/
+
 == Changelog ==
 
-= 1.0 - 02-01-2026 =
+= 1.0.0 - 02-01-2026 =
 - Initial release

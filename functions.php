@@ -27,3 +27,6 @@ define( 'BEYOND_FSE_ASSETS_DIR', \get_template_directory() . '/assets' );
 // Includes.
 require_once BEYOND_FSE_ROOT_DIR . '/includes/class-assets-loader.php';
 require_once BEYOND_FSE_ROOT_DIR . '/includes/class-theme-supports.php';
+
+// Blocks manager: styles & attributes.
+require_once BEYOND_FSE_ROOT_DIR . '/includes/class-blocks-manager.php';
