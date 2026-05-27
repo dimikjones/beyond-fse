@@ -9,12 +9,15 @@
  * Block Types:
  * Post Types:
  * Inserter: true
+ *
+ * @package Beyond_FSE
  */
+
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
 <!-- wp:image {"id":748,"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/Pink-Neon-Now-Sign-768x1024.webp" alt="Pink Neon Now Sign" class="wp-image-748" style="aspect-ratio:16/9;object-fit:cover"/></figure>
+<figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/work-harder-neon.webp" alt="Work Harder Neon Sign" class="wp-image-748" style="aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":1} -->

@@ -52,11 +52,21 @@ GNU General Public License for more details.
 
 === Images ===
 
-Pink-Neon-Now-Sign-768x1024.webp - Copyright Nicholas S. via Pexels
-License: Pexels License - https://www.pexels.com/license/
-Source: https://www.pexels.com/photo/pink-neon-word-sign-6175330/
+Content: work-harder-neon.webp
+Source: https://stocksnap.io/photo/blue-wall-VNQ7YNEDLD
+Artist: Jordan Whitfield (via StockSnap)
+License: CC0 / Public Domain (GPL-compatible)
+
+Content: 404-page-not-found.webp
+Source: Generated using Google Gemini (Nano Banana image generation model)
+Prompt: A clean 2D vector-style cartoon illustration of a panicked male software developer with a thick brown beard, glasses, and a yellow t-shirt that reads "Senior Dev Send Help", standing in front of two computer monitors displaying a red "404 ERROR", isolated on a white background, modern comic book style, bold outlines.
+License: CC0 / Public Domain (Commercial use permitted under Google Terms of Service)
 
 == Changelog ==
 
 = 1.0.0 - 02-01-2026 =
+- Initial release
+
+== Upgrade Notice ==
+
 - Initial release
