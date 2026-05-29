@@ -57,6 +57,11 @@ Source: https://stocksnap.io/photo/blue-wall-VNQ7YNEDLD
 Artist: Jordan Whitfield (via StockSnap)
 License: CC0 / Public Domain (GPL-compatible)
 
+Content: man-smiling.webp
+Source: https://stocksnap.io/photo/man-smiling-MKVSGM8TO9
+Artist: Burst (via StockSnap)
+License: CC0 / Public Domain (GPL-compatible)
+
 Content: 404-page-not-found.webp
 Source: Generated using Google Gemini (Nano Banana image generation model)
 Prompt: A clean 2D vector-style cartoon illustration of a panicked male software developer with a thick brown beard, glasses, and a yellow t-shirt that reads "Senior Dev Send Help", standing in front of two computer monitors displaying a red "404 ERROR", isolated on a white background, modern comic book style, bold outlines.
