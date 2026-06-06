@@ -50,6 +50,24 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
+=== Fonts ===
+
+Albert Sans - SIL OPEN FONT LICENSE Version 1.1
+License: https://fonts.google.com/specimen/Albert+Sans/license
+Source: https://fonts.google.com/specimen/Albert+Sans
+
+Bitter - SIL OPEN FONT LICENSE Version 1.1
+License: https://fonts.google.com/specimen/Bitter/license
+Source: https://fonts.google.com/specimen/Bitter
+
+Public Sans - SIL OPEN FONT LICENSE Version 1.1
+License: https://fonts.google.com/specimen/Public+Sans/license
+Source: https://fonts.google.com/specimen/Public+Sans
+
+Space Grotesk - SIL OPEN FONT LICENSE Version 1.1
+License: https://fonts.google.com/specimen/Space+Grotesk/license
+Source: https://fonts.google.com/specimen/Space+Grotesk
+
 === Images ===
 
 Pink-Neon-Now-Sign-768x1024.webp - Copyright Nicholas S. via Pexels
