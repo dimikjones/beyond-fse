@@ -9,7 +9,10 @@
  * Block Types:
  * Post Types:
  * Inserter: true
+ *
+ * @package Beyond_FSE
  */
+
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
