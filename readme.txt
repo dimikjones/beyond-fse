@@ -52,27 +52,33 @@ GNU General Public License for more details.
 
 === Fonts ===
 
-Albert Sans - SIL OPEN FONT LICENSE Version 1.1
-License: https://fonts.google.com/specimen/Albert+Sans/license
+Albert Sans
+License: SIL OPEN FONT LICENSE Version 1.1
+License URL: SIL OPEN FONT LICENSE Version 1.1
 Source: https://fonts.google.com/specimen/Albert+Sans
 
-Bitter - SIL OPEN FONT LICENSE Version 1.1
-License: https://fonts.google.com/specimen/Bitter/license
+Bitter
+License: SIL OPEN FONT LICENSE Version 1.1
+License URL: https://fonts.google.com/specimen/Bitter/license
 Source: https://fonts.google.com/specimen/Bitter
 
-Public Sans - SIL OPEN FONT LICENSE Version 1.1
-License: https://fonts.google.com/specimen/Public+Sans/license
+Public Sans
+License: SIL OPEN FONT LICENSE Version 1.1
+License URL: https://fonts.google.com/specimen/Public+Sans/license
 Source: https://fonts.google.com/specimen/Public+Sans
 
-Space Grotesk - SIL OPEN FONT LICENSE Version 1.1
-License: https://fonts.google.com/specimen/Space+Grotesk/license
+Space Grotesk
+License: SIL OPEN FONT LICENSE Version 1.1
+License URL: https://fonts.google.com/specimen/Space+Grotesk/license
 Source: https://fonts.google.com/specimen/Space+Grotesk
 
 === Images ===
 
-Pink-Neon-Now-Sign-768x1024.webp - Copyright Nicholas S. via Pexels
-License: Pexels License - https://www.pexels.com/license/
-Source: https://www.pexels.com/photo/pink-neon-word-sign-6175330/
+Image used in the page-now pattern
+work-harder-neon.webp - Credit Jordan Whitfield
+License: CC0 1.0 Universal
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://stocksnap.io/photo/blue-wall-VNQ7YNEDLD
 
 == Changelog ==
 
