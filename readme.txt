@@ -23,6 +23,12 @@ Key Features:
 = Check how it lookss like on my blog: =
 <a href="https://markocodes.com/">markocodes.com</a>
 
+== Frequently Asked Questions ==
+
+= Will I have 100% score on PageSpeed Insights =
+
+It depends of images that you will use, hosting speed and above all web is changing constantly but it should be around that value.
+
 == Installation ==
 
 = Minimum Requirements =
@@ -58,6 +64,8 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
+
+== Resources ==
 
 === Fonts ===
 
