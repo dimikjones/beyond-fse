@@ -108,12 +108,10 @@ Image used in 404-content pattern
 Prompt: Humorous cartoon illustration of a panicked male software developer with a thick brown beard, glasses, and blue headphones. He is wearing a yellow t-shirt with the clear text "Senior Dev Send Help". The character stands at his desk looking shocked and overwhelmed, holding a disconnected power plug and cable. In the background, two computer monitors display a bright red pixelated "404 ERROR". On the desk, there is a spilled coffee cup. Clean comic book style, bold outlines, vibrant colors, isolated on a white background.
 License: CC0 1.0 Universal / Public Domain (GPL Compatible)
 
-
 == Changelog ==
 
 = 1.0.0 - 02-01-2026 =
 * Initial release
-
 
 == Upgrade Notice ==
 
