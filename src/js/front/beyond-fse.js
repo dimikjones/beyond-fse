@@ -53,12 +53,10 @@
 
     // Fire it off when DOM is ready
     document.addEventListener('DOMContentLoaded', () => {
+        // Check if block navigation behavior is enabled via body class
+        if ( ! document.body.classList.contains( 'has-beyond-fse-block-nav-behavior' ) ) {
+            return;
+        }
         beyondFseNavSubmenuBehavior.init();
     });
-
-    /**
-     * Expose the object to global scope only if you need to call it from other scripts. 
-     * Otherwise, keep it private inside the IIFE.
-     */
-    // window.beyondFseNavSubmenuBehavior = beyondFseNavSubmenuBehavior;
 })();
