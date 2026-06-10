@@ -32,11 +32,11 @@ class Theme_Supports {
 		\add_filter( 'render_block', array( __CLASS__, 'add_accessible_read_more' ), 10, 2 );
 
 		// Add this line to trigger the font preload.
-		add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
+		\add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
 	}
 
 	/**
-	 * Preload the Inter variable font to prevent layout shifts.
+	 * Preload the PublicSans default theme font to prevent layout shifts.
 	 *
 	 * @since 0.1.0
 	 *
@@ -44,7 +44,7 @@ class Theme_Supports {
 	 */
 	public static function preload_fonts() {
 		?>
-		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/PublicSans-VariableFont_wght.woff2' ) ); ?>" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="<?php echo \esc_url( \get_theme_file_uri( 'assets/fonts/PublicSans-VariableFont_wght.woff2' ) ); ?>" as="font" type="font/woff2" crossorigin>
 		<?php
 	}
 
@@ -60,10 +60,10 @@ class Theme_Supports {
 	public static function add_accessible_read_more( $block_content, $block ) {
 		if ( 'core/post-excerpt' === $block['blockName'] ) {
 			$post_id = $block['attrs']['postId'] ?? get_the_ID();
-			$title   = get_the_title( $post_id );
+			$title   = \get_the_title( $post_id );
 
 			// We append the title inside a span with our utility class.
-			$sr_text = ' <span class="screen-reader-text">about ' . esc_html( $title ) . '</span></a>';
+			$sr_text = ' <span class="screen-reader-text">about ' . \esc_html( $title ) . '</span></a>';
 
 			// Inject the span before the closing anchor tag.
 			$block_content = str_replace( '</a>', $sr_text, $block_content );
