@@ -36,7 +36,7 @@ class Theme_Supports {
 	}
 
 	/**
-	 * Preload the Inter variable font to prevent layout shifts.
+	 * Preload the PublicSans default theme font to prevent layout shifts.
 	 *
 	 * @since 0.1.0
 	 *
