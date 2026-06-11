@@ -44,6 +44,7 @@ const INCLUDE_PATTERNS = [
   '**/*.woff2',
   '**/*.ttf',
   '**/*.eot',
+  'languages/**',
   // Specific files without extensions
   'LICENSE',
 ];
