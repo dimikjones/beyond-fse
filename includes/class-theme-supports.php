@@ -30,22 +30,6 @@ class Theme_Supports {
 	public static function init() {
 		// Fix for "Links do not have descriptive text".
 		\add_filter( 'render_block', array( __CLASS__, 'add_accessible_read_more' ), 10, 2 );
-
-		// Add this line to trigger the font preload.
-		\add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
-	}
-
-	/**
-	 * Preload the PublicSans default theme font to prevent layout shifts.
-	 *
-	 * @since 0.1.0
-	 *
-	 * @return void
-	 */
-	public static function preload_fonts() {
-		?>
-		<link rel="preload" href="<?php echo \esc_url( \get_theme_file_uri( 'assets/fonts/PublicSans-VariableFont_wght.woff2' ) ); ?>" as="font" type="font/woff2" crossorigin>
-		<?php
 	}
 
 	/**
