@@ -21,7 +21,7 @@ Key Features:
 * Highly Optimized: Clean, standard-compliant code optimized for excellent core web vitals and SEO.
 
 = Check how it lookss like on my blog: =
-<a href="https://markocodes.com/">markocodes.com</a>
+https://markocodes.com/
 
 == Frequently Asked Questions ==
 
@@ -71,7 +71,7 @@ GNU General Public License for more details.
 
 Albert Sans
 License: SIL OPEN FONT LICENSE Version 1.1
-License URL: SIL OPEN FONT LICENSE Version 1.1
+License URL: https://fonts.google.com/specimen/Albert+Sans/license
 Source: https://fonts.google.com/specimen/Albert+Sans
 
 Bitter
