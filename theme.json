@@ -232,8 +232,8 @@
           "size": "clamp(1.75rem, 1.65rem + 0.5vw, 2rem)"
         },
         {
-          "name": "Enormus",
-          "slug": "enormus",
+          "name": "Enormous",
+          "slug": "enormous",
           "size": "clamp(2rem, 1.85rem + 0.75vw, 2.375rem)"
         },
         {
@@ -283,7 +283,7 @@
           "text": "var(--wp--preset--color--syntax-heading)"
         },
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--enormus)",
+          "fontSize": "var(--wp--preset--font-size--enormous)",
           "lineHeight": "var(--wp--custom--line-height--tight)"
         }
       },
