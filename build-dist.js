@@ -22,7 +22,7 @@ const rm = promisify(fs.rm);
 
 // Configuration
 const SOURCE_DIR = __dirname;
-const BUILD_DIR = path.join(SOURCE_DIR, 'build');
+const BUILD_DIR = path.join(SOURCE_DIR, 'build', 'beyond-fse');
 const THEME_NAME = 'beyond-fse';
 
 // Files and directories to include (production files only)
