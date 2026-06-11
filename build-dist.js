@@ -40,6 +40,7 @@ const INCLUDE_PATTERNS = [
   '**/*.gif',
   '**/*.svg',
   '**/*.ico',
+  '**/*.webp',
   '**/*.woff',
   '**/*.woff2',
   '**/*.ttf',
