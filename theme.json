@@ -13,7 +13,7 @@
         {
           "name": "Double Soft Shadow",
           "slug": "double-soft",
-          "shadow": "0px 6px 12px 0px #1A306212, 0px 12px 12px 0px #1A306212"
+          "shadow": "0px 3px 6px 0px #1A306212, 0px 6px 6px 0px #1A306212"
         }
       ]
     },

@@ -126,6 +126,10 @@
       > .wp-block-navigation__submenu-container {
         transform: translateX(-1.5rem);
 
+        .wp-block-navigation__submenu-icon {
+          color: var(--wp--preset--color--syntax-heading);
+        }
+
         .wp-block-navigation-item {
           .wp-block-navigation__submenu-container {
             top: -1rem;
@@ -148,7 +152,7 @@
       border-radius: var(--wp--custom--border--radius--medium);
       box-shadow: var(--wp--preset--shadow--double-soft);
       padding: 1rem 0;
-      min-width: 275px !important;
+      min-width: 290px !important;
 
       > .wp-block-navigation-item {
         font-size: var(--wp--preset--font-size--small);
