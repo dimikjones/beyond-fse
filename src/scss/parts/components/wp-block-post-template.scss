@@ -1,4 +1,16 @@
 .wp-block-post-template {
+  .wp-block-post {
+    &.sticky {
+      .wp-block-post-title {
+        > a {
+          &:after {
+            content: "*";
+          }
+        }
+      }
+    }
+  }
+
   &.is-layout-grid {
     gap: 18px;
     margin: 0;
