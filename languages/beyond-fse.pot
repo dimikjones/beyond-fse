@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-25T00:09:25+02:00\n"
+"POT-Creation-Date: 2026-06-25T00:13:35+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: beyond-fse\n"
@@ -39,54 +39,43 @@ msgstr ""
 msgid "https://markocodes.com/"
 msgstr ""
 
-#: build/beyond-fse/includes/class-blocks-manager.php:91
 #: includes/class-blocks-manager.php:91
 msgid "Check Circle"
 msgstr ""
 
-#: build/beyond-fse/includes/class-blocks-manager.php:94
-#: build/beyond-fse/includes/class-blocks-manager.php:102
 #: includes/class-blocks-manager.php:94
 #: includes/class-blocks-manager.php:102
 msgid "Invert"
 msgstr ""
 
-#: build/beyond-fse/includes/class-blocks-manager.php:97
 #: includes/class-blocks-manager.php:97
 msgid "Stripes"
 msgstr ""
 
-#: build/beyond-fse/includes/class-blocks-manager.php:98
 #: includes/class-blocks-manager.php:98
 msgid "Thin"
 msgstr ""
 
-#: build/beyond-fse/includes/class-blocks-manager.php:99
 #: includes/class-blocks-manager.php:99
 msgid "Thin Wide"
 msgstr ""
 
-#: build/beyond-fse/includes/class-blocks-manager.php:133
 #: includes/class-blocks-manager.php:133
 msgid "Pages"
 msgstr ""
 
-#: build/beyond-fse/includes/class-theme-options.php:53
 #: includes/class-theme-options.php:53
 msgid "Theme Options"
 msgstr ""
 
-#: build/beyond-fse/includes/class-theme-options.php:62
 #: includes/class-theme-options.php:62
 msgid "Header"
 msgstr ""
 
-#: build/beyond-fse/includes/class-theme-options.php:83
 #: includes/class-theme-options.php:83
 msgid "Block Navigation Behavior"
 msgstr ""
 
-#: build/beyond-fse/includes/class-theme-options.php:84
 #: includes/class-theme-options.php:84
 msgid "On desktop devices (> 1024px): Removes the open-on-click class from navigation items, restoring the expected hover behavior for desktop users."
 msgstr ""
@@ -122,69 +111,59 @@ msgid "Personal websites often have a link that says “now” that tells you wh
 msgstr ""
 
 #: assets/admin.js:57
-#: build/beyond-fse/assets/admin.js:57
 #: src/js/admin/beyond-fse-admin.js:47
 #: assets/admin.js:58
 msgid "Heading Tag"
 msgstr ""
 
 #: assets/admin.js:60
-#: build/beyond-fse/assets/admin.js:60
 #: src/js/admin/beyond-fse-admin.js:51
 #: assets/admin.js:62
 msgid "Tag Name"
 msgstr ""
 
 #: assets/admin.js:63
-#: build/beyond-fse/assets/admin.js:63
 #: src/js/admin/beyond-fse-admin.js:54
 #: assets/admin.js:65
 msgid "Div"
 msgstr ""
 
 #: assets/admin.js:66
-#: build/beyond-fse/assets/admin.js:66
 #: src/js/admin/beyond-fse-admin.js:55
 msgid "Heading 1"
 msgstr ""
 
 #: assets/admin.js:69
-#: build/beyond-fse/assets/admin.js:69
 #: src/js/admin/beyond-fse-admin.js:56
 #: assets/admin.js:67
 msgid "Heading 2"
 msgstr ""
 
 #: assets/admin.js:72
-#: build/beyond-fse/assets/admin.js:72
 #: src/js/admin/beyond-fse-admin.js:57
 #: assets/admin.js:68
 msgid "Heading 3"
 msgstr ""
 
 #: assets/admin.js:75
-#: build/beyond-fse/assets/admin.js:75
 #: src/js/admin/beyond-fse-admin.js:58
 #: assets/admin.js:69
 msgid "Heading 4"
 msgstr ""
 
 #: assets/admin.js:78
-#: build/beyond-fse/assets/admin.js:78
 #: src/js/admin/beyond-fse-admin.js:59
 #: assets/admin.js:70
 msgid "Heading 5"
 msgstr ""
 
 #: assets/admin.js:81
-#: build/beyond-fse/assets/admin.js:81
 #: src/js/admin/beyond-fse-admin.js:60
 #: assets/admin.js:71
 msgid "Heading 6"
 msgstr ""
 
 #: assets/admin.js:89
-#: build/beyond-fse/assets/admin.js:89
 #: src/js/admin/beyond-fse-admin.js:63
 #: assets/admin.js:74
 msgid "Select the HTML tag for the author name"
