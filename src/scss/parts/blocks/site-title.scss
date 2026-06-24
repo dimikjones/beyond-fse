@@ -5,6 +5,7 @@
     text-decoration-color: currentColor;
     transition: text-decoration-color
       var(--wp--custom--transition-timing--default);
+    word-break: break-word;
     &:hover {
       color: currentColor;
       text-decoration-color: currentColor;
