@@ -1,6 +1,6 @@
 .wp-block-quote {
   &:not(.is-style-blockquote) {
-    border-left: var(--wp--preset--spacing--xxxs) solid
+    border-left: var(--wp--preset--spacing--small) solid
       var(--wp--preset--color--link-vapor);
 
     > * {
