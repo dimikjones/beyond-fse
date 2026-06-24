@@ -24,10 +24,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">It looks like this page has been force-pushed into oblivion or never existed in this repository. Try checking out <strong><code><a href="/">main</a></code> </strong>or switching to a different path.</p>
+<p class="has-text-align-center">It looks like this page has been force-pushed into oblivion or never existed in this repository. Try checking out <strong><code><a href="/">main</a></code> </strong>or try your luck with search.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"15vh"} -->
-<div style="height:15vh" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Type...","width":100,"widthUnit":"%","buttonText":"Search"} /-->
+
+<!-- wp:spacer {"height":"10vh"} -->
+<div style="height:10vh" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer --></div>
 <!-- /wp:group -->
