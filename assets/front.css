@@ -619,7 +619,8 @@ input[type="submit"].wp-block-button__link {
   color: currentColor;
   text-decoration: underline;
   text-decoration-color: currentColor;
-  transition: text-decoration-color var(--wp--custom--transition-timing--default); }
+  transition: text-decoration-color var(--wp--custom--transition-timing--default);
+  word-break: break-word; }
   .wp-block-site-title a:hover {
     color: currentColor;
     text-decoration-color: currentColor; }
