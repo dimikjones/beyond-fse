@@ -16,7 +16,7 @@
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
-<!-- wp:image {"id":748,"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"aspectRatio":"16/9","scale":"cover","sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/work-harder-neon.webp" alt="" class="wp-image-748" style="aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image -->
 

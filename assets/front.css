@@ -64,7 +64,7 @@ a {
 
 ul,
 ol {
-  margin: 0 0 var(--wp--preset--spacing--tiny) var(--wp--preset--spacing--xxxs);
+  margin: 0 0 var(--wp--preset--spacing--tiny) var(--wp--preset--spacing--small);
   padding-left: var(--wp--preset--spacing--normal); }
 
 ul,
@@ -601,7 +601,7 @@ input[type="submit"].wp-block-button__link {
     text-decoration-color: var(--wp--preset--color--link-vapor); }
 
 .wp-block-quote:not(.is-style-blockquote) {
-  border-left: var(--wp--preset--spacing--xxxs) solid var(--wp--preset--color--link-vapor); }
+  border-left: var(--wp--preset--spacing--small) solid var(--wp--preset--color--link-vapor); }
   .wp-block-quote:not(.is-style-blockquote) > * {
     padding-left: var(--wp--preset--spacing--normal); }
 
@@ -635,7 +635,7 @@ input[type="submit"].wp-block-button__link {
 .wp-block-accordion-item {
   border-radius: var(--wp--custom--border--radius--small);
   background-color: var(--wp--preset--color--warm-insight);
-  margin: var(--wp--preset--spacing--xxxs) 0; }
+  margin: var(--wp--preset--spacing--small) 0; }
   .wp-block-accordion-item > .wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon {
     transition: none;
     position: relative;
@@ -644,7 +644,7 @@ input[type="submit"].wp-block-button__link {
     height: 29px;
     display: flex; }
   .wp-block-accordion-item .wp-block-accordion-heading__toggle-title {
-    padding-right: var(--wp--preset--spacing--xxxs); }
+    padding-right: var(--wp--preset--spacing--small); }
     .wp-block-accordion-item .wp-block-accordion-heading__toggle-title strong {
       background: none; }
   .wp-block-accordion-item.is-open > .wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon {
@@ -672,7 +672,7 @@ input[type="submit"].wp-block-button__link {
       transform-origin: center;
       flex-shrink: 0; }
     .wp-block-accordion-item .wp-block-accordion-heading__toggle .wp-block-accordion-heading__toggle-icon + .wp-block-accordion-heading__toggle-title {
-      padding-left: var(--wp--preset--spacing--xxxs);
+      padding-left: var(--wp--preset--spacing--small);
       padding-right: 0; }
   .wp-block-accordion-item:first-child {
     margin-top: 0; }

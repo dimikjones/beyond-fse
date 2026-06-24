@@ -9,7 +9,7 @@
   // Item container styling
   border-radius: var(--wp--custom--border--radius--small);
   background-color: var(--wp--preset--color--warm-insight);
-  margin: var(--wp--preset--spacing--xxxs) 0;
+  margin: var(--wp--preset--spacing--small) 0;
 
   > .wp-block-accordion-heading .wp-block-accordion-heading__toggle-icon {
     transition: none;
@@ -21,7 +21,7 @@
   }
 
   .wp-block-accordion-heading__toggle-title {
-    padding-right: var(--wp--preset--spacing--xxxs);
+    padding-right: var(--wp--preset--spacing--small);
     strong {
       background: none;
     }
@@ -52,7 +52,7 @@
 
       // Icon Postion Left
       + .wp-block-accordion-heading__toggle-title {
-        padding-left: var(--wp--preset--spacing--xxxs);
+        padding-left: var(--wp--preset--spacing--small);
         padding-right: 0;
       }
     }
