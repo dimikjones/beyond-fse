@@ -43,7 +43,7 @@ class Theme_Supports {
 	 */
 	public static function add_accessible_read_more( $block_content, $block ) {
 		if ( 'core/post-excerpt' === $block['blockName'] ) {
-			$post_id = $block['attrs']['postId'] ?? get_the_ID();
+			$post_id = $block['attrs']['postId'] ?? \get_the_ID();
 			$title   = \get_the_title( $post_id );
 
 			// We append the title inside a span with our utility class.

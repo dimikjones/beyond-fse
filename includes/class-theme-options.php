@@ -97,7 +97,7 @@ class Theme_Options {
 	 */
 	public static function add_body_classes( $classes ) {
 		// Check if block navigation behavior is enabled.
-		if ( get_theme_mod( 'beyond_fse_block_nav_behavior', false ) ) {
+		if ( \get_theme_mod( 'beyond_fse_block_nav_behavior', false ) ) {
 			$classes[] = 'has-beyond-fse-block-nav-behavior';
 		}
 
