@@ -41,6 +41,9 @@ class Assets_Loader {
 		// Increase maximum size for CSS files to be inlined by WordPress.
 		\add_filter( 'styles_inline_size_limit', array( __CLASS__, 'inline_style_limit' ) );
 
+		// Preload fonts.
+		\add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
+
 		// Defer loading of specified styles.
 		\add_filter( 'style_loader_tag', array( __CLASS__, 'assets_preload' ), 10, 2 );
 	}
@@ -121,6 +124,22 @@ class Assets_Loader {
 		$new_limit = 61440;
 
 		return $new_limit;
+	}
+
+	/**
+	 * Preloads the Public Sans variable font.
+	 *
+	 * Outputs a preload link tag in the document head to prioritize
+	 * loading the variable font file for improved performance.
+	 *
+	 * @since 0.1.0
+	 *
+	 * @return void
+	 */
+	public static function preload_fonts() {
+		?>
+		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/PublicSans-VariableFont_wght.woff2' ) ); ?>" as="font" type="font/woff2" crossorigin>
+		<?php
 	}
 
 	/**
