@@ -3,7 +3,7 @@
  * Manages all block-related configurations, including registering custom
  * block styles and extending default block attributes.
  *
- * @since 0.1.0
+ * @since 1.0.0
  *
  * @package Beyond_FSE
  */
@@ -24,7 +24,7 @@ class Blocks_Manager {
 	/**
 	 * Initializes all necessary WordPress hooks for block management.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -48,7 +48,7 @@ class Blocks_Manager {
 	 * @param array  $block         The full block array, including name and attributes.
 	 * @return string The modified block content.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 */
 	public static function render_author_name_with_tag( $block_content, $block ) {
 
@@ -77,7 +77,7 @@ class Blocks_Manager {
 	/**
 	 * Registers custom block styles.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -119,7 +119,7 @@ class Blocks_Manager {
 	/**
 	 * Registers block pattern categories.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
