@@ -147,7 +147,7 @@
               "fontFamily": "Public Sans",
               "fontWeight": "400 500 600 700 900",
               "fontStyle": "normal",
-              "fontDisplay": "optional",
+              "fontDisplay": "swap",
               "src": ["file:./assets/fonts/PublicSans-VariableFont_wght.woff2"]
             }
           ]

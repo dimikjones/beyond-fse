@@ -27,27 +27,26 @@ var __webpack_exports__ = {};
   /**
    * Create a namespace for the object.
    */
-  var beyondFseNavSubmenuBehavior = {
+  const beyondFseNavSubmenuBehavior = {
     /**
      * Initialize the navigation logic
      */
-    init: function init() {
-      var _this = this;
+    init: function () {
       // Run on load
       this.adjustBehavior();
 
       // Run on resize with debouncing
-      window.addEventListener('resize', this.debounce(function () {
-        _this.adjustBehavior();
+      window.addEventListener('resize', this.debounce(() => {
+        this.adjustBehavior();
       }, 250));
     },
     /**
      * Adjust navigation behavior based on screen size
      */
-    adjustBehavior: function adjustBehavior() {
-      var isDesktop = window.innerWidth > 1024;
-      var navItems = document.querySelectorAll('.wp-block-navigation .has-child');
-      navItems.forEach(function (item) {
+    adjustBehavior: function () {
+      const isDesktop = window.innerWidth > 1024;
+      const navItems = document.querySelectorAll('.wp-block-navigation .has-child');
+      navItems.forEach(item => {
         if (isDesktop) {
           item.classList.remove('open-on-click');
         } else {
@@ -58,15 +57,12 @@ var __webpack_exports__ = {};
     /**
      * Utility: Debounce
      */
-    debounce: function debounce(func, wait) {
-      var timeout;
-      return function () {
-        for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-          args[_key] = arguments[_key];
-        }
-        var later = function later() {
+    debounce: function (func, wait) {
+      let timeout;
+      return function (...args) {
+        const later = () => {
           clearTimeout(timeout);
-          func.apply(void 0, args);
+          func(...args);
         };
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
@@ -75,7 +71,7 @@ var __webpack_exports__ = {};
   };
 
   // Fire it off when DOM is ready
-  document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', () => {
     // Check if block navigation behavior is enabled via body class
     if (!document.body.classList.contains('has-beyond-fse-block-nav-behavior')) {
       return;

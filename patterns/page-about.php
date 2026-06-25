@@ -17,7 +17,7 @@
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
 <!-- wp:image {"id":749,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-large"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/man-smiling.webp" alt="" class="wp-image-749"/></figure>
+<figure class="wp-block-image aligncenter size-large"><img src="<?php echo esc_url( \get_template_directory_uri() ); ?>/assets/images/man-smiling.webp" alt="" class="wp-image-749"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":1,"style":{"typography":{"textAlign":"center"}}} -->
