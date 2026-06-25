@@ -2,7 +2,7 @@
 /**
  * Theme Supports
  *
- * @since 0.1.0
+ * @since 1.0.0
  *
  * @package Beyond_FSE
  */
@@ -23,7 +23,7 @@ class Theme_Supports {
 	/**
 	 * Initializes all necessary WordPress hooks.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -35,7 +35,7 @@ class Theme_Supports {
 	/**
 	 * Injects screen-reader-only text into the Post Excerpt "Read More" link.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @param string $block_content The block content.
 	 * @param array  $block         The full block, including name and attributes.

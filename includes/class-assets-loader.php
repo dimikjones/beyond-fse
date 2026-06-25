@@ -2,7 +2,7 @@
 /**
  * Enqueue assets
  *
- * @since 0.1.0
+ * @since 1.0.0
  *
  * @package Beyond_FSE
  */
@@ -24,7 +24,7 @@ class Assets_Loader {
 	/**
 	 * Initializes all necessary WordPress hooks.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -41,6 +41,9 @@ class Assets_Loader {
 		// Increase maximum size for CSS files to be inlined by WordPress.
 		\add_filter( 'styles_inline_size_limit', array( __CLASS__, 'inline_style_limit' ) );
 
+		// Preload fonts.
+		\add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
+
 		// Defer loading of specified styles.
 		\add_filter( 'style_loader_tag', array( __CLASS__, 'assets_preload' ), 10, 2 );
 	}
@@ -48,7 +51,7 @@ class Assets_Loader {
 	/**
 	 * Register theme front assets
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -77,7 +80,7 @@ class Assets_Loader {
 	/**
 	 * Register theme admin assets (for Block Editor)
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -95,7 +98,7 @@ class Assets_Loader {
 	/**
 	 * Load front-end styles for the Block Editor iframe content using the canonical method.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -110,7 +113,7 @@ class Assets_Loader {
 	/**
 	 * Sets the maximum size for CSS files to be inlined by WordPress.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return int The new limit in bytes.
 	 */
@@ -124,12 +127,28 @@ class Assets_Loader {
 	}
 
 	/**
+	 * Preloads the Public Sans variable font.
+	 *
+	 * Outputs a preload link tag in the document head to prioritize
+	 * loading the variable font file for improved performance.
+	 *
+	 * @since 1.0.0
+	 *
+	 * @return void
+	 */
+	public static function preload_fonts() {
+		?>
+		<link rel="preload" href="<?php echo esc_url( get_theme_file_uri( 'assets/fonts/PublicSans-VariableFont_wght.woff2' ) ); ?>" as="font" type="font/woff2" crossorigin>
+		<?php
+	}
+
+	/**
 	 * Filters the HTML link tags for specific stylesheets to implement preloading.
 	 *
 	 * This method adds a 'rel="preload"' link for critical assets, ensuring they
 	 * are fetched with high priority by the browser to reduce Cumulative Layout Shift (CLS).
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 * @hooked style_loader_tag
 	 *
 	 * @param string $html   The full HTML link tag for the enqueued style.

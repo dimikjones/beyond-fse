@@ -4,7 +4,7 @@
  *
  * Adds a "Theme Options" panel with customizable settings for the theme.
  *
- * @since 0.1.0
+ * @since 1.0.0
  *
  * @package Beyond_FSE
  */
@@ -25,7 +25,7 @@ class Theme_Options {
 	/**
 	 * Initializes all necessary WordPress hooks for theme options.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @return void
 	 */
@@ -40,7 +40,7 @@ class Theme_Options {
 	/**
 	 * Registers customizer settings, sections, and controls.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @param \WP_Customize_Manager $wp_customize Customizer manager instance.
 	 * @return void
@@ -90,7 +90,7 @@ class Theme_Options {
 	/**
 	 * Adds custom body classes based on theme options.
 	 *
-	 * @since 0.1.0
+	 * @since 1.0.0
 	 *
 	 * @param array $classes Array of body classes.
 	 * @return array Modified array of body classes.
