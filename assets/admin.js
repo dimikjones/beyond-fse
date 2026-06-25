@@ -25,7 +25,7 @@ var __webpack_exports__ = {};
  * Author Name Heading Tag functionality
  * Adds tagName attribute to core/post-author-name block
  */
-wp.hooks.addFilter("blocks.registerBlockType", "beyond-fse/author-name-tag-attribute", function (settings, name) {
+wp.hooks.addFilter("blocks.registerBlockType", "beyond-fse/author-name-tag-attribute", (settings, name) => {
   if (name !== "core/post-author-name") {
     return settings;
   }
@@ -36,7 +36,7 @@ wp.hooks.addFilter("blocks.registerBlockType", "beyond-fse/author-name-tag-attri
   }
   settings.attributes.tagName = {
     type: "string",
-    "default": "div"
+    default: "div"
   };
   return settings;
 });
@@ -45,14 +45,18 @@ wp.hooks.addFilter("blocks.registerBlockType", "beyond-fse/author-name-tag-attri
  * Author Name Heading Tag UI Control
  * Adds tagName selector to core/post-author-name block settings
  */
-wp.hooks.addFilter("editor.BlockEdit", "beyond-fse/author-name-tag-control", wp.compose.createHigherOrderComponent(function (BlockEdit) {
-  return function (props) {
+wp.hooks.addFilter("editor.BlockEdit", "beyond-fse/author-name-tag-control", wp.compose.createHigherOrderComponent(BlockEdit => {
+  return props => {
     if (props.name !== "core/post-author-name") {
       return /*#__PURE__*/React.createElement(BlockEdit, props);
     }
-    var attributes = props.attributes,
-      setAttributes = props.setAttributes;
-    var tagName = attributes.tagName;
+    const {
+      attributes,
+      setAttributes
+    } = props;
+    const {
+      tagName
+    } = attributes;
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(BlockEdit, props), /*#__PURE__*/React.createElement(wp.blockEditor.InspectorControls, null, /*#__PURE__*/React.createElement(wp.components.PanelBody, {
       title: wp.i18n.__("Heading Tag", "beyond-fse"),
       initialOpen: false
@@ -81,11 +85,9 @@ wp.hooks.addFilter("editor.BlockEdit", "beyond-fse/author-name-tag-control", wp.
         label: wp.i18n.__("Heading 6", "beyond-fse"),
         value: "h6"
       }],
-      onChange: function onChange(value) {
-        return setAttributes({
-          tagName: value
-        });
-      },
+      onChange: value => setAttributes({
+        tagName: value
+      }),
       help: wp.i18n.__("Select the HTML tag for the author name", "beyond-fse"),
       __nextHasNoMarginBottom: true,
       __next40pxDefaultSize: true

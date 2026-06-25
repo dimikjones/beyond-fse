@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-25T18:51:11+02:00\n"
+"POT-Creation-Date: 2026-06-25T19:03:11+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: beyond-fse\n"
@@ -121,69 +121,70 @@ msgctxt "Pattern description"
 msgid "Personal websites often have a link that says “now” that tells you what this person is focused on at this point in their life. It’s called a “now page”."
 msgstr ""
 
-#: assets/admin.js:57
+#: assets/admin.js:61
 #: build/beyond-fse/assets/admin.js:57
 #: src/js/admin/beyond-fse-admin.js:47
 #: assets/admin.js:58
 msgid "Heading Tag"
 msgstr ""
 
-#: assets/admin.js:60
+#: assets/admin.js:64
 #: build/beyond-fse/assets/admin.js:60
 #: src/js/admin/beyond-fse-admin.js:51
 #: assets/admin.js:62
 msgid "Tag Name"
 msgstr ""
 
-#: assets/admin.js:63
+#: assets/admin.js:67
 #: build/beyond-fse/assets/admin.js:63
 #: src/js/admin/beyond-fse-admin.js:54
 #: assets/admin.js:65
 msgid "Div"
 msgstr ""
 
-#: assets/admin.js:66
+#: assets/admin.js:70
 #: build/beyond-fse/assets/admin.js:66
 #: src/js/admin/beyond-fse-admin.js:55
+#: assets/admin.js:66
 msgid "Heading 1"
 msgstr ""
 
-#: assets/admin.js:69
+#: assets/admin.js:73
 #: build/beyond-fse/assets/admin.js:69
 #: src/js/admin/beyond-fse-admin.js:56
 #: assets/admin.js:67
 msgid "Heading 2"
 msgstr ""
 
-#: assets/admin.js:72
+#: assets/admin.js:76
 #: build/beyond-fse/assets/admin.js:72
 #: src/js/admin/beyond-fse-admin.js:57
 #: assets/admin.js:68
 msgid "Heading 3"
 msgstr ""
 
-#: assets/admin.js:75
+#: assets/admin.js:79
 #: build/beyond-fse/assets/admin.js:75
 #: src/js/admin/beyond-fse-admin.js:58
 #: assets/admin.js:69
 msgid "Heading 4"
 msgstr ""
 
-#: assets/admin.js:78
+#: assets/admin.js:82
 #: build/beyond-fse/assets/admin.js:78
 #: src/js/admin/beyond-fse-admin.js:59
 #: assets/admin.js:70
 msgid "Heading 5"
 msgstr ""
 
-#: assets/admin.js:81
+#: assets/admin.js:85
 #: build/beyond-fse/assets/admin.js:81
 #: src/js/admin/beyond-fse-admin.js:60
 #: assets/admin.js:71
 msgid "Heading 6"
 msgstr ""
 
-#: assets/admin.js:89
+#: assets/admin.js:91
 #: build/beyond-fse/assets/admin.js:89
 #: src/js/admin/beyond-fse-admin.js:63
 #: assets/admin.js:74
