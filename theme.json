@@ -147,7 +147,7 @@
               "fontFamily": "Public Sans",
               "fontWeight": "400 500 600 700 900",
               "fontStyle": "normal",
-              "fontDisplay": "swap",
+              "fontDisplay": "fallback",
               "src": ["file:./assets/fonts/PublicSans-VariableFont_wght.woff2"]
             }
           ]
@@ -161,7 +161,7 @@
               "fontFamily": "Albert Sans",
               "fontWeight": "400 600 700 900",
               "fontStyle": "normal",
-              "fontDisplay": "swap",
+              "fontDisplay": "fallback",
               "src": ["file:./assets/fonts/AlbertSans-VariableFont_wght.woff2"]
             }
           ]
@@ -175,7 +175,7 @@
               "fontFamily": "Bitter",
               "fontWeight": "400 600 700 900",
               "fontStyle": "normal",
-              "fontDisplay": "swap",
+              "fontDisplay": "fallback",
               "src": ["file:./assets/fonts/Bitter-VariableFont_wght.woff2"]
             }
           ]
@@ -189,7 +189,7 @@
               "fontFamily": "Space Grotesk",
               "fontWeight": "400 600 700 900",
               "fontStyle": "normal",
-              "fontDisplay": "swap",
+              "fontDisplay": "fallback",
               "src": ["file:./assets/fonts/SpaceGrotesk-VariableFont_wght.woff2"]
             }
           ]
