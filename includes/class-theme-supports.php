@@ -47,7 +47,11 @@ class Theme_Supports {
 			$title   = \get_the_title( $post_id );
 
 			// We append the title inside a span with our utility class.
-			$sr_text = ' <span class="screen-reader-text">about ' . \esc_html( $title ) . '</span></a>';
+			$sr_text = ' <span class="screen-reader-text">' . sprintf(
+			/* translators: %s: Post or page title */
+				\esc_html__( 'about %s', 'beyond-fse' ),
+				\esc_html( $title )
+			) . '</span></a>';
 
 			// Inject the span before the closing anchor tag.
 			$block_content = str_replace( '</a>', $sr_text, $block_content );
