@@ -26,6 +26,7 @@ Key Features:
 * Fixed "Tested up to" version
 * Replaced theme screenshot.png file
 * Replace header text with generic lorem ipsum
+* Improved add_accessible_read_more method
 
 = 1.0.0 - 02-01-2026 =
 * Initial release
