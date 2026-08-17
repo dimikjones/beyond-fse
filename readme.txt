@@ -1,9 +1,9 @@
 == Beyond FSE ==
 Contributors: dimikjones
-Requires at least: 6.9
+Requires at least: 6.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,10 +22,19 @@ Key Features:
 
 == Changelog ==
 
+= 1.0.1 - 14-08-2026 =
+* Fixed "Tested up to" version
+* Replaced theme screenshot.png file
+* Replace header text with generic lorem ipsum
+* Improved add_accessible_read_more method
+
 = 1.0.0 - 02-01-2026 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Minor pre release translation fixes and improvements
 
 = 1.0.0 =
 * Initial release
@@ -40,7 +49,7 @@ It depends of images that you will use, number of plugins, hosting speed and abo
 
 = Minimum Requirements =
 
-* WordPress 6.9 or greater
+* WordPress 6.8 or greater
 * PHP version 7.4 or greater
 
 = Installation =

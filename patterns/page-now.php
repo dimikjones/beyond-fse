@@ -21,42 +21,51 @@
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":1} -->
-<h1 class="wp-block-heading">What I am doing now?</h1>
+<h1 class="wp-block-heading"><?php esc_html_e( 'What I am doing now?', 'beyond-fse' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|tiny"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p><strong>Last updated:</strong></p>
+<p><strong><?php esc_html_e( 'Last updated:', 'beyond-fse' ); ?></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"modified"}}}},"className":"wp-block-post-date__modified-date"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>This is my <strong>Now page</strong>. It’s a place where you can find out what I’m currently focused on throughout the year. My goal is to update it several times annually. While I have seen similar pages on some blogs, I was originally inspired to create mine by fellow developers in the community.</p>
+<p>
+<?php
+	printf(
+		/* translators: %1$s: <strong> tag, %2$s: </strong> tag */
+		esc_html__( 'This is my %1$sNow page%2$s. It’s a place where you can find out what I’m currently focused on throughout the year. My goal is to update it several times annually. While I have seen similar pages on some blogs, I was originally inspired to create mine by fellow developers in the community.', 'beyond-fse' ),
+		'<strong>',
+		'</strong>'
+	);
+	?>
+</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Professional Reading</h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Professional Reading', 'beyond-fse' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>I’m the kind of person who learns by doing, catching up on the theory along the way. While this hands-on approach works great for me, I want to allocate more time to reading industry books and staying updated with the latest engineering trends and best practices.</p>
+<p><?php esc_html_e( 'I\'m the kind of person who learns by doing, catching up on the theory along the way. While this hands-on approach works great for me, I want to allocate more time to reading industry books and staying updated with the latest engineering trends and best practices.', 'beyond-fse' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Blogging & Sharing Knowledge</h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Blogging & Sharing Knowledge', 'beyond-fse' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Since I’ve finally revamped and launched this new blog, I am excited to start writing again. I plan to blog about web development, share my thoughts on various technical topics, and document my journey. My goal is to share knowledge; I’m a firm believer that the best way to learn more is to teach others.</p>
+<p><?php esc_html_e( 'Since I\'ve finally revamped and launched this new blog, I am excited to start writing again. I plan to blog about web development, share my thoughts on various technical topics, and document my journey. My goal is to share knowledge; I’m a firm believer that the best way to learn more is to teach others.', 'beyond-fse' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
-<h2 class="wp-block-heading">Industry Insights</h2>
+<h2 class="wp-block-heading"><?php esc_html_e( 'Industry Insights', 'beyond-fse' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>After years of shifts in the tech landscape, the rise of AI, and evolving industry standards, many wonder what the future holds for developers. While the industry faces new questions every year, the passion for writing clean code, solving complex problems, and creating great user experiences remains as strong as ever.</p>
+<p><?php esc_html_e( 'After years of shifts in the tech landscape, the rise of AI, and evolving industry standards, many wonder what the future holds for developers. While the industry faces new questions every year, the passion for writing clean code, solving complex problems, and creating great user experiences remains as strong as ever.', 'beyond-fse' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
