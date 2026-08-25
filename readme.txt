@@ -1,9 +1,9 @@
 == Beyond FSE ==
 Contributors: dimikjones
 Requires at least: 6.8
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,10 @@ Key Features:
 
 == Changelog ==
 
+= 1.0.2 - 25-08-2026 =
+* Bumped "Tested up to" to 7.1
+* Bumped theme version to 1.0.2
+
 = 1.0.1 - 14-08-2026 =
 * Fixed "Tested up to" version
 * Replaced theme screenshot.png file
@@ -32,6 +36,9 @@ Key Features:
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* Bumped "Tested up to" to 7.1 and theme version to 1.0.2
 
 = 1.0.1 =
 * Minor pre release translation fixes and improvements
