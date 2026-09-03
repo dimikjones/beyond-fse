@@ -93,6 +93,9 @@ class Assets_Loader {
 			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) : BEYOND_FSE_VERSION,
 			true // Load in the footer.
 		);
+
+		// Register JS translations for the admin script.
+		\wp_set_script_translations( 'beyond-fse-admin-script', 'beyond-fse' );
 	}
 
 	/**

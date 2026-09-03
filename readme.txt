@@ -23,9 +23,10 @@ Key Features:
 == Changelog ==
 
 = 1.1.0 - 6-09-2026 =
+* Added missing script dependencies to admin asset enqueue
+* Added JS translation registration for the admin script
 * Fixed Keyboard Navigation
 * Removed unused Sass @use directive from compiled CSS
-* Added missing script dependencies to admin asset enqueue
 
 = 1.0.2 - 25-08-2026 =
 * Bumped "Tested up to" to 7.1
