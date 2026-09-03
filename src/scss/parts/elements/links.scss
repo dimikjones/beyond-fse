@@ -1,18 +1,24 @@
 a {
+  color: var(--wp--preset--color--syntax-heading);
+  font-weight: inherit;
+
+  &:visited {
     color: var(--wp--preset--color--syntax-heading);
     font-weight: inherit;
+  }
 
-    &:visited {
-        color: var(--wp--preset--color--syntax-heading);
-        font-weight: inherit;
-    }
+  &:focus {
+    outline: thin dotted;
+  }
 
-    &:focus {
-        outline: thin dotted;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
 
-    &:hover,
-    &:active {
-        outline: 0;
-    }
+:where(.wp-site-blocks :focus) {
+  outline-style: solid !important;
+  outline-width: 2px !important;
 }

@@ -12,7 +12,8 @@
   p {
     a {
       text-decoration-color: var(--wp--preset--color--warm-insight);
-      &:hover {
+      &:hover,
+      &:focus {
         text-decoration-color: var(--wp--preset--color--warm-insight);
       }
     }

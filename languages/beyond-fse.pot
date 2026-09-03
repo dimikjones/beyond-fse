@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-25T22:32:10+02:00\n"
+"POT-Creation-Date: 2026-09-03T22:37:26+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: beyond-fse\n"
@@ -39,50 +39,174 @@ msgstr ""
 msgid "https://markocodes.com/"
 msgstr ""
 
+#: build/beyond-fse/includes/class-blocks-manager.php:91
 #: includes/class-blocks-manager.php:91
 msgid "Check Circle"
 msgstr ""
 
+#: build/beyond-fse/includes/class-blocks-manager.php:94
+#: build/beyond-fse/includes/class-blocks-manager.php:102
 #: includes/class-blocks-manager.php:94
 #: includes/class-blocks-manager.php:102
 msgid "Invert"
 msgstr ""
 
+#: build/beyond-fse/includes/class-blocks-manager.php:97
 #: includes/class-blocks-manager.php:97
 msgid "Stripes"
 msgstr ""
 
+#: build/beyond-fse/includes/class-blocks-manager.php:98
 #: includes/class-blocks-manager.php:98
 msgid "Thin"
 msgstr ""
 
+#: build/beyond-fse/includes/class-blocks-manager.php:99
 #: includes/class-blocks-manager.php:99
 msgid "Thin Wide"
 msgstr ""
 
+#: build/beyond-fse/includes/class-blocks-manager.php:133
 #: includes/class-blocks-manager.php:133
 msgid "Pages"
 msgstr ""
 
+#: build/beyond-fse/includes/class-theme-options.php:53
 #: includes/class-theme-options.php:53
 msgid "Theme Options"
 msgstr ""
 
+#: build/beyond-fse/includes/class-theme-options.php:62
 #: includes/class-theme-options.php:62
 msgid "Header"
 msgstr ""
 
+#: build/beyond-fse/includes/class-theme-options.php:83
 #: includes/class-theme-options.php:83
 msgid "Block Navigation Behavior"
 msgstr ""
 
+#: build/beyond-fse/includes/class-theme-options.php:84
 #: includes/class-theme-options.php:84
 msgid "On desktop devices (> 1024px): Removes the open-on-click class from navigation items, restoring the expected hover behavior for desktop users."
 msgstr ""
 
 #. translators: %s: Post or page title
+#: build/beyond-fse/includes/class-theme-supports.php:52
 #: includes/class-theme-supports.php:52
 msgid "about %s"
+msgstr ""
+
+#: build/beyond-fse/patterns/404-content.php:19
+#: patterns/404-content.php:19
+msgid "404 Page not found"
+msgstr ""
+
+#: build/beyond-fse/patterns/404-content.php:23
+#: patterns/404-content.php:23
+msgid "404: Branch Not Found"
+msgstr ""
+
+#. translators: %s: Link to the homepage/main branch
+#: build/beyond-fse/patterns/404-content.php:31
+#: patterns/404-content.php:31
+msgid "It looks like this page has been force-pushed into oblivion or never existed in this repository. Try checking out %s or try your luck with search."
+msgstr ""
+
+#: build/beyond-fse/patterns/404-content.php:32
+#: patterns/404-content.php:32
+msgid "main"
+msgstr ""
+
+#: build/beyond-fse/patterns/404-content.php:38
+#: patterns/404-content.php:38
+msgid "Search"
+msgstr ""
+
+#: build/beyond-fse/patterns/404-content.php:38
+#: patterns/404-content.php:38
+msgid "Type..."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:24
+#: patterns/page-about.php:24
+msgid "About me"
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:28
+#: patterns/page-about.php:28
+msgid "Hi there! I am a software engineer, open-source enthusiast, and digital craftsman who has spent the last decade building accessible experiences on the web."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:32
+#: patterns/page-about.php:32
+msgid "The journey into web development didn't start with code, but with a passion for digital storytelling and typography. Years ago, while trying to launch a small online magazine, a discovery of WordPress changed everything. What was meant to be a weekend project quickly turned into an obsession. It was fascinating to see how a few lines of styling could completely alter the mood of a page, and how dynamic code could bring content to life."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:36
+#: patterns/page-about.php:36
+msgid "Driven by curiosity, the path led from a casual user into a self-taught developer. Over the years, this career has spanned every corner of the digital ecosystem, from agency life engineering bespoke enterprise solutions to collaborating with global product teams. Having witnessed the web evolve from rigid layouts to fluid, responsive designs, the focus today is fully immersed in the frontier of Full Site Editing, block governance, and performance-first architecture."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:40
+#: patterns/page-about.php:40
+msgid "WordPress is more than just a content management system; it's an ecosystem built on the radical idea of democratizing publishing. That philosophy dictates the entire approach to building. The focus is always on clean code, semantic markup, and creating intuitive user interfaces that empower creators rather than confusing them."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:44
+#: patterns/page-about.php:44
+msgid "When code editors are closed and the screen is dark, inspiration comes from simple things like brewing the perfect cup of coffee, collecting vintage vinyl records, or hitting the mountain trails for a long hike. Spending a weekend disconnected in nature often turns out to be the absolute best way to debug a complex architectural problem."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-about.php:48
+#: patterns/page-about.php:48
+msgid "Whether it is collaborating on an open-source project, discussing web performance, or exploring the future of modern block themes, the door is always open for a great conversation. Let's create something meaningful together!"
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:24
+#: patterns/page-now.php:24
+msgid "What I am doing now?"
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:29
+#: patterns/page-now.php:29
+msgid "Last updated:"
+msgstr ""
+
+#. translators: %1$s: <strong> tag, %2$s: </strong> tag
+#: build/beyond-fse/patterns/page-now.php:40
+#: patterns/page-now.php:40
+msgid "This is my %1$sNow page%2$s. It’s a place where you can find out what I’m currently focused on throughout the year. My goal is to update it several times annually. While I have seen similar pages on some blogs, I was originally inspired to create mine by fellow developers in the community."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:49
+#: patterns/page-now.php:49
+msgid "Professional Reading"
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:53
+#: patterns/page-now.php:53
+msgid "I'm the kind of person who learns by doing, catching up on the theory along the way. While this hands-on approach works great for me, I want to allocate more time to reading industry books and staying updated with the latest engineering trends and best practices."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:57
+#: patterns/page-now.php:57
+msgid "Blogging & Sharing Knowledge"
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:61
+#: patterns/page-now.php:61
+msgid "Since I've finally revamped and launched this new blog, I am excited to start writing again. I plan to blog about web development, share my thoughts on various technical topics, and document my journey. My goal is to share knowledge; I’m a firm believer that the best way to learn more is to teach others."
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:65
+#: patterns/page-now.php:65
+msgid "Industry Insights"
+msgstr ""
+
+#: build/beyond-fse/patterns/page-now.php:69
+#: patterns/page-now.php:69
+msgid "After years of shifts in the tech landscape, the rise of AI, and evolving industry standards, many wonder what the future holds for developers. While the industry faces new questions every year, the passion for writing clean code, solving complex problems, and creating great user experiences remains as strong as ever."
 msgstr ""
 
 #: patterns/404-content.php
@@ -95,31 +219,6 @@ msgctxt "Pattern description"
 msgid "404 page not found content with image."
 msgstr ""
 
-#: patterns/404-content.php:19
-msgid "404 Page not found"
-msgstr ""
-
-#: patterns/404-content.php:23
-msgid "404: Branch Not Found"
-msgstr ""
-
-#. translators: %s: Link to the homepage/main branch
-#: patterns/404-content.php:31
-msgid "It looks like this page has been force-pushed into oblivion or never existed in this repository. Try checking out %s or try your luck with search."
-msgstr ""
-
-#: patterns/404-content.php:32
-msgid "main"
-msgstr ""
-
-#: patterns/404-content.php:38
-msgid "Search"
-msgstr ""
-
-#: patterns/404-content.php:38
-msgid "Type..."
-msgstr ""
-
 #: patterns/page-about.php
 msgctxt "Pattern title"
 msgid "Page About"
@@ -128,34 +227,6 @@ msgstr ""
 #: patterns/page-about.php
 msgctxt "Pattern description"
 msgid "About me page commonly present on blogs."
-msgstr ""
-
-#: patterns/page-about.php:24
-msgid "About me"
-msgstr ""
-
-#: patterns/page-about.php:28
-msgid "Hi there! I am a software engineer, open-source enthusiast, and digital craftsman who has spent the last decade building accessible experiences on the web."
-msgstr ""
-
-#: patterns/page-about.php:32
-msgid "The journey into web development didn't start with code, but with a passion for digital storytelling and typography. Years ago, while trying to launch a small online magazine, a discovery of WordPress changed everything. What was meant to be a weekend project quickly turned into an obsession. It was fascinating to see how a few lines of styling could completely alter the mood of a page, and how dynamic code could bring content to life."
-msgstr ""
-
-#: patterns/page-about.php:36
-msgid "Driven by curiosity, the path led from a casual user into a self-taught developer. Over the years, this career has spanned every corner of the digital ecosystem, from agency life engineering bespoke enterprise solutions to collaborating with global product teams. Having witnessed the web evolve from rigid layouts to fluid, responsive designs, the focus today is fully immersed in the frontier of Full Site Editing, block governance, and performance-first architecture."
-msgstr ""
-
-#: patterns/page-about.php:40
-msgid "WordPress is more than just a content management system; it's an ecosystem built on the radical idea of democratizing publishing. That philosophy dictates the entire approach to building. The focus is always on clean code, semantic markup, and creating intuitive user interfaces that empower creators rather than confusing them."
-msgstr ""
-
-#: patterns/page-about.php:44
-msgid "When code editors are closed and the screen is dark, inspiration comes from simple things like brewing the perfect cup of coffee, collecting vintage vinyl records, or hitting the mountain trails for a long hike. Spending a weekend disconnected in nature often turns out to be the absolute best way to debug a complex architectural problem."
-msgstr ""
-
-#: patterns/page-about.php:48
-msgid "Whether it is collaborating on an open-source project, discussing web performance, or exploring the future of modern block themes, the door is always open for a great conversation. Let's create something meaningful together!"
 msgstr ""
 
 #: patterns/page-now.php
@@ -168,98 +239,71 @@ msgctxt "Pattern description"
 msgid "Personal websites often have a link that says “now” that tells you what this person is focused on at this point in their life. It’s called a “now page”."
 msgstr ""
 
-#: patterns/page-now.php:24
-msgid "What I am doing now?"
-msgstr ""
-
-#: patterns/page-now.php:29
-msgid "Last updated:"
-msgstr ""
-
-#. translators: %1$s: <strong> tag, %2$s: </strong> tag
-#: patterns/page-now.php:40
-msgid "This is my %1$sNow page%2$s. It’s a place where you can find out what I’m currently focused on throughout the year. My goal is to update it several times annually. While I have seen similar pages on some blogs, I was originally inspired to create mine by fellow developers in the community."
-msgstr ""
-
-#: patterns/page-now.php:49
-msgid "Professional Reading"
-msgstr ""
-
-#: patterns/page-now.php:53
-msgid "I'm the kind of person who learns by doing, catching up on the theory along the way. While this hands-on approach works great for me, I want to allocate more time to reading industry books and staying updated with the latest engineering trends and best practices."
-msgstr ""
-
-#: patterns/page-now.php:57
-msgid "Blogging & Sharing Knowledge"
-msgstr ""
-
-#: patterns/page-now.php:61
-msgid "Since I've finally revamped and launched this new blog, I am excited to start writing again. I plan to blog about web development, share my thoughts on various technical topics, and document my journey. My goal is to share knowledge; I’m a firm believer that the best way to learn more is to teach others."
-msgstr ""
-
-#: patterns/page-now.php:65
-msgid "Industry Insights"
-msgstr ""
-
-#: patterns/page-now.php:69
-msgid "After years of shifts in the tech landscape, the rise of AI, and evolving industry standards, many wonder what the future holds for developers. While the industry faces new questions every year, the passion for writing clean code, solving complex problems, and creating great user experiences remains as strong as ever."
-msgstr ""
-
 #: assets/admin.js:61
+#: build/beyond-fse/assets/admin.js:61
 #: src/js/admin/beyond-fse-admin.js:47
 #: assets/admin.js:58
 msgid "Heading Tag"
 msgstr ""
 
 #: assets/admin.js:64
+#: build/beyond-fse/assets/admin.js:64
 #: src/js/admin/beyond-fse-admin.js:51
 #: assets/admin.js:62
 msgid "Tag Name"
 msgstr ""
 
 #: assets/admin.js:67
+#: build/beyond-fse/assets/admin.js:67
 #: src/js/admin/beyond-fse-admin.js:54
 #: assets/admin.js:65
 msgid "Div"
 msgstr ""
 
 #: assets/admin.js:70
+#: build/beyond-fse/assets/admin.js:70
 #: src/js/admin/beyond-fse-admin.js:55
 #: assets/admin.js:66
 msgid "Heading 1"
 msgstr ""
 
 #: assets/admin.js:73
+#: build/beyond-fse/assets/admin.js:73
 #: src/js/admin/beyond-fse-admin.js:56
 #: assets/admin.js:67
 msgid "Heading 2"
 msgstr ""
 
 #: assets/admin.js:76
+#: build/beyond-fse/assets/admin.js:76
 #: src/js/admin/beyond-fse-admin.js:57
 #: assets/admin.js:68
 msgid "Heading 3"
 msgstr ""
 
 #: assets/admin.js:79
+#: build/beyond-fse/assets/admin.js:79
 #: src/js/admin/beyond-fse-admin.js:58
 #: assets/admin.js:69
 msgid "Heading 4"
 msgstr ""
 
 #: assets/admin.js:82
+#: build/beyond-fse/assets/admin.js:82
 #: src/js/admin/beyond-fse-admin.js:59
 #: assets/admin.js:70
 msgid "Heading 5"
 msgstr ""
 
 #: assets/admin.js:85
+#: build/beyond-fse/assets/admin.js:85
 #: src/js/admin/beyond-fse-admin.js:60
 #: assets/admin.js:71
 msgid "Heading 6"
 msgstr ""
 
 #: assets/admin.js:91
+#: build/beyond-fse/assets/admin.js:91
 #: src/js/admin/beyond-fse-admin.js:63
 #: assets/admin.js:74
 msgid "Select the HTML tag for the author name"
