@@ -89,7 +89,7 @@ class Assets_Loader {
 		\wp_enqueue_script(
 			'beyond-fse-admin-script',
 			BEYOND_FSE_ASSETS_ROOT . '/admin.min.js',
-			array(),
+			array( 'wp-element', 'wp-compose', 'wp-block-editor', 'wp-components', 'wp-i18n', 'wp-hooks', 'wp-data' ),
 			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) : BEYOND_FSE_VERSION,
 			true // Load in the footer.
 		);
