@@ -64,17 +64,19 @@ class Assets_Loader {
 			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.css' ) : BEYOND_FSE_VERSION,
 		);
 
-		// Enqueue theme's main script.
-		\wp_enqueue_script(
-			'beyond-fse-front-script',
-			BEYOND_FSE_ASSETS_ROOT . '/front.min.js',
-			array(),
-			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) : BEYOND_FSE_VERSION,
-			array(
-				'strategy'  => 'defer',
-				'in_footer' => true,
-			)
-		);
+		// Enqueue the navigation behavior script only when the option is enabled.
+		if ( \get_theme_mod( 'beyond_fse_block_nav_behavior', false ) ) {
+			\wp_enqueue_script(
+				'beyond-fse-front-script',
+				BEYOND_FSE_ASSETS_ROOT . '/front.min.js',
+				array(),
+				file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) : BEYOND_FSE_VERSION,
+				array(
+					'strategy'  => 'defer',
+					'in_footer' => true,
+				)
+			);
+		}
 	}
 
 	/**

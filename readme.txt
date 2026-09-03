@@ -27,6 +27,7 @@ Key Features:
 * Added JS translation registration for the admin script
 * Fixed Keyboard Navigation
 * Removed unused Sass @use directive from compiled CSS
+* Load the front-end script only when block navigation behavior is enabled
 
 = 1.0.2 - 25-08-2026 =
 * Bumped "Tested up to" to 7.1
