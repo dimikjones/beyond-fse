@@ -26,6 +26,7 @@ Key Features:
 * Added missing script dependencies to admin asset enqueue
 * Added JS translation registration for the admin script
 * Fixed duplicate id attribute on the preloaded stylesheet link
+* Fixed empty alt attribute for accessibility in About and Now page patterns
 * Fixed Keyboard Navigation
 * Removed unused Sass @use directive from compiled CSS
 * Load the front-end script only when block navigation behavior is enabled
