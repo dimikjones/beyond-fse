@@ -28,6 +28,7 @@ Key Features:
 * Fixed duplicate id attribute on the preloaded stylesheet link
 * Fixed empty alt attribute for accessibility in About and Now page patterns
 * Fixed Keyboard Navigation
+* Improved add_accessible_read_more to only target the Read more link
 * Removed unused Sass @use directive from compiled CSS
 * Load the front-end script only when block navigation behavior is enabled
 

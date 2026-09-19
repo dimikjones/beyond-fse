@@ -37,27 +37,43 @@ class Theme_Supports {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param string $block_content The block content.
-	 * @param array  $block         The full block, including name and attributes.
-	 * @return string
+	 * @param string $block_content - The block content.
+	 * @param array  $block - The full block, including name and attributes.
+	 *
+	 * @return string $block_content - The filtered block content.
 	 */
 	public static function add_accessible_read_more( $block_content, $block ) {
-		if ( 'core/post-excerpt' === $block['blockName'] ) {
-			$post_id = $block['attrs']['postId'] ?? \get_the_ID();
-			$title   = \get_the_title( $post_id );
+		$block_name = $block['blockName'] ?? '';
 
-			// We append the title inside a span with our utility class.
-			$sr_text = ' <span class="screen-reader-text">' . sprintf(
-			/* translators: %s: Post or page title */
-				\esc_html__( 'about %s', 'beyond-fse' ),
-				\esc_html( $title )
-			) . '</span></a>';
-
-			// Inject the span before the closing anchor tag.
-			// We replace only the last </a> to avoid affecting other links inside the excerpt.
-			$block_content = preg_replace( '/<\/a>(?!.*<\/a>)/s', $sr_text, $block_content, 1 );
+		if ( 'core/post-excerpt' !== $block_name ) {
+			return $block_content;
 		}
-		return $block_content;
+
+		/**
+		 * Bail out when the block renders no "Read more" link, otherwise the span would be
+		 * appended to a link inside the excerpt body.
+		 */
+		if ( ! str_contains( $block_content, 'wp-block-post-excerpt__more-link' ) ) {
+			return $block_content;
+		}
+
+		$post_id = $block['attrs']['postId'] ?? \get_the_ID();
+		$title   = \get_the_title( $post_id );
+
+		if ( '' === $title ) {
+			return $block_content;
+		}
+
+		// Screen reader only text, appended inside the "Read more" link.
+		$sr_text = '<span class="screen-reader-text">' . sprintf(
+			/* translators: %s: Post or page title. Leading space separates it from the link text. */
+			\esc_html__( ' about %s', 'beyond-fse' ),
+			\esc_html( $title )
+		) . '</span>';
+
+		// Inject the span before the closing anchor tag.
+		// We replace only the last </a> to avoid affecting other links inside the excerpt.
+		return preg_replace( '#</a>(?!.*</a>)#s', $sr_text . '</a>', $block_content, 1 );
 	}
 }
 
