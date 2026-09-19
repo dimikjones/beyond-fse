@@ -28,6 +28,7 @@ Key Features:
 * Fixed duplicate id attribute on the preloaded stylesheet link
 * Fixed empty alt attribute for accessibility in About and Now page patterns
 * Fixed Keyboard Navigation
+* Replaced the excerpt Read more regex with a direct string replacement
 * Improved add_accessible_read_more to only target the Read more link
 * Improved author name tag replacement in the Post Author Name block
 * Removed unused Sass @use directive from compiled CSS

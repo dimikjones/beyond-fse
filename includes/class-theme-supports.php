@@ -73,7 +73,13 @@ class Theme_Supports {
 
 		// Inject the span before the closing anchor tag.
 		// We replace only the last </a> to avoid affecting other links inside the excerpt.
-		return preg_replace( '#</a>(?!.*</a>)#s', $sr_text . '</a>', $block_content, 1 );
+		$last_anchor = strrpos( $block_content, '</a>' );
+
+		if ( false === $last_anchor ) {
+			return $block_content;
+		}
+
+		return substr_replace( $block_content, $sr_text . '</a>', $last_anchor, 4 );
 	}
 }
 
