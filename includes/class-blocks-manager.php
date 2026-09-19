@@ -44,33 +44,51 @@ class Blocks_Manager {
 	 *
 	 * This hook modifies the block output to use the selected tag (div, h1-h6) instead of default div.
 	 *
-	 * @param string $block_content The block's content.
-	 * @param array  $block         The full block array, including name and attributes.
-	 * @return string The modified block content.
+	 * @param string $block_content - The block's content.
+	 * @param array  $block - The full block array, including name and attributes.
+	 *
+	 * @return string $block_content - The modified block content.
 	 *
 	 * @since 1.0.0
 	 */
 	public static function render_author_name_with_tag( $block_content, $block ) {
+		$block_name = $block['blockName'] ?? '';
 
 		// Target only the core/post-author-name block.
-		if ( 'core/post-author-name' === $block['blockName'] ) {
-
-			// Get the tag saved from our JS attribute (fallback to div).
-			$tag = isset( $block['attrs']['tagName'] ) ? $block['attrs']['tagName'] : 'div';
-
-			// Ensure the tag is valid (div or h1-h6).
-			$valid_tags = array( 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' );
-			if ( ! in_array( $tag, $valid_tags, true ) ) {
-				$tag = 'div';
-			}
-
-			// Use regex to replace the opening and closing div tags while preserving attributes.
-			// This keeps all the existing classes and styles intact.
-			$block_content = preg_replace( '/<div([^>]*)>/i', '<' . $tag . '$1>', $block_content );
-			$block_content = preg_replace( '/<\/div>/i', '</' . $tag . '>', $block_content );
+		if ( 'core/post-author-name' !== $block_name ) {
+			return $block_content;
 		}
 
-		// Always return the block content.
+		// Bail out if the rendered block does not look like the expected wrapper.
+		if ( ! str_contains( $block_content, 'wp-block-post-author-name' ) ) {
+			return $block_content;
+		}
+
+		// Get the tag saved from our JS attribute (fallback to div).
+		$tag = $block['attrs']['tagName'] ?? 'div';
+
+		// Ensure the tag is valid (div or h1-h6).
+		$valid_tags = array( 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' );
+
+		if ( ! in_array( $tag, $valid_tags, true ) ) {
+			$tag = 'div';
+		}
+
+		// Nothing to do when the block keeps its default wrapper.
+		if ( 'div' === $tag ) {
+			return $block_content;
+		}
+
+		// Rename only the opening tag of the block wrapper, keeping its attributes intact.
+		$block_content = preg_replace( '/<div\b/i', '<' . $tag, $block_content, 1 );
+
+		// Rename only the matching closing tag, the last </div> in the block.
+		$close_pos = strrpos( $block_content, '</div>' );
+
+		if ( false !== $close_pos ) {
+			$block_content = substr_replace( $block_content, '</' . $tag . '>', $close_pos, 6 );
+		}
+
 		return $block_content;
 	}
 
