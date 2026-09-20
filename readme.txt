@@ -26,7 +26,7 @@ Key Features:
 * Added missing script dependencies to admin asset enqueue
 * Added JS translation registration for the admin script
 * Fixed duplicate id attribute on the preloaded stylesheet link
-* Fixed empty alt attribute for accessibility in About and Now page patterns
+* Fixed empty alt attribute and removed hard-coded image IDs in About and Now page patterns
 * Fixed Keyboard Navigation highlighting
 * Replaced the excerpt Read more regex with a direct string replacement
 * Improved add_accessible_read_more to only target the Read more link
