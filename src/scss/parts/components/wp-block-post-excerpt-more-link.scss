@@ -4,7 +4,8 @@
   text-transform: uppercase;
   text-decoration-color: var(--wp--preset--color--warm-insight);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--wp--preset--color--syntax-heading);
   }
 }

@@ -44,8 +44,8 @@ class Assets_Loader {
 		// Preload fonts.
 		\add_action( 'wp_head', array( __CLASS__, 'preload_fonts' ), 1 );
 
-		// Defer loading of specified styles.
-		\add_filter( 'style_loader_tag', array( __CLASS__, 'assets_preload' ), 10, 2 );
+		// Preload critical styles.
+		\add_filter( 'style_loader_tag', array( __CLASS__, 'assets_preload' ), 10, 4 );
 	}
 
 	/**
@@ -64,17 +64,19 @@ class Assets_Loader {
 			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.css' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.css' ) : BEYOND_FSE_VERSION,
 		);
 
-		// Enqueue theme's main script.
-		\wp_enqueue_script(
-			'beyond-fse-front-script',
-			BEYOND_FSE_ASSETS_ROOT . '/front.min.js',
-			array(),
-			file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) : BEYOND_FSE_VERSION,
-			array(
-				'strategy'  => 'defer',
-				'in_footer' => true,
-			)
-		);
+		// Enqueue the navigation behavior script only when the option is enabled.
+		if ( \get_theme_mod( 'beyond_fse_block_nav_behavior', false ) ) {
+			\wp_enqueue_script(
+				'beyond-fse-front-script',
+				BEYOND_FSE_ASSETS_ROOT . '/front.min.js',
+				array(),
+				file_exists( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/front.min.js' ) : BEYOND_FSE_VERSION,
+				array(
+					'strategy'  => 'defer',
+					'in_footer' => true,
+				)
+			);
+		}
 	}
 
 	/**
@@ -89,10 +91,13 @@ class Assets_Loader {
 		\wp_enqueue_script(
 			'beyond-fse-admin-script',
 			BEYOND_FSE_ASSETS_ROOT . '/admin.min.js',
-			array(),
+			array( 'wp-element', 'wp-compose', 'wp-block-editor', 'wp-components', 'wp-i18n', 'wp-hooks', 'wp-data' ),
 			file_exists( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) ? filemtime( BEYOND_FSE_ASSETS_DIR . '/admin.min.js' ) : BEYOND_FSE_VERSION,
 			true // Load in the footer.
 		);
+
+		// Register JS translations for the admin script.
+		\wp_set_script_translations( 'beyond-fse-admin-script', 'beyond-fse' );
 	}
 
 	/**
@@ -145,39 +150,45 @@ class Assets_Loader {
 	/**
 	 * Filters the HTML link tags for specific stylesheets to implement preloading.
 	 *
-	 * This method adds a 'rel="preload"' link for critical assets, ensuring they
-	 * are fetched with high priority by the browser to reduce Cumulative Layout Shift (CLS).
+	 * Prepends a 'rel="preload"' link for critical assets so the browser fetches them
+	 * with a higher priority. The preload tag carries no id attribute, because core
+	 * prints id="{handle}-css" on the stylesheet tag and duplicating it results in
+	 * duplicate id values in the document.
 	 *
 	 * @since 1.0.0
+	 *
 	 * @hooked style_loader_tag
 	 *
-	 * @param string $html   The full HTML link tag for the enqueued style.
-	 * @param string $handle The style's registered handle.
-	 * @return string The modified HTML containing both the preload and the stylesheet tag.
+	 * @param string $html   - The full HTML link tag for the enqueued style.
+	 * @param string $handle - The style's registered handle.
+	 * @param string $href   - The stylesheet's source URL.
+	 * @param string $media  - The stylesheet's media attribute.
+	 *
+	 * @return string $html - The modified HTML with the preload tag prepended.
 	 */
-	public static function assets_preload( $html, $handle ) {
+	public static function assets_preload( $html, $handle, $href, $media ) {
 		// Define an array of stylesheet handles that should be preloaded.
 		$preload_handles = array(
 			'beyond-fse-front-style',
-		// Add other critical layout handles here.
+			// Add other critical layout handles here.
 		);
 
-		if ( in_array( $handle, $preload_handles, true ) ) {
-			/**
-			 * Create the preload tag.
-			 * We duplicate the link but change the relation to 'preload'.
-			 */
-			$preload_tag = preg_replace(
-				'/rel=[\'"]stylesheet[\'"]/',
-				'rel="preload" as="style"',
-				$html
-			);
-
-			// Return the preload tag followed by the original stylesheet tag.
-			return $preload_tag . $html;
+		if ( ! in_array( $handle, $preload_handles, true ) ) {
+			return $html;
 		}
 
-		return $html;
+		/**
+		 * Use the exact href from the stylesheet tag, query string included, otherwise the
+		 * browser treats the preload as a different resource and downloads the file twice.
+		 */
+		$preload_tag = sprintf(
+			"<link rel='preload' as='style' href='%s' media='%s' />\n",
+			\esc_url( $href ),
+			\esc_attr( $media )
+		);
+
+		// Return the preload tag followed by the original stylesheet tag.
+		return $preload_tag . $html;
 	}
 }
 

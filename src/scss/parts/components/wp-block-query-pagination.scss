@@ -4,7 +4,8 @@
   }
 
   a {
-    &:hover {
+    &:hover,
+    &:focus {
         text-decoration-color: var(--wp--preset--color--syntax-heading);
     }
   }

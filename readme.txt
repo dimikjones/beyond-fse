@@ -3,7 +3,7 @@ Contributors: dimikjones
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,20 @@ Key Features:
 * Highly Optimized: Clean, standard-compliant code optimized for excellent core web vitals and SEO structure.
 
 == Changelog ==
+
+= 1.1.0 - 2026-09-06 =
+* Added missing script dependencies to admin asset enqueue
+* Added JS translation registration for the admin script
+* Fixed duplicate id attribute on the preloaded stylesheet link
+* Fixed empty alt attribute and removed hard-coded image IDs in About and Now page patterns
+* Fixed Keyboard Navigation highlighting
+* Replaced the excerpt Read more regex with a direct string replacement
+* Improved add_accessible_read_more to only target the Read more link
+* Improved author name tag replacement in the Post Author Name block
+* Removed unused Sass @use directive from compiled CSS
+* Removed the obsolete 1.0.0 upgrade notice from readme.txt
+* Load the front-end script only when block navigation behavior is enabled
+* Blog listing templates now inherit the main query so WordPress Reading settings apply
 
 = 1.0.2 - 25-08-2026 =
 * Bumped "Tested up to" to 7.1
@@ -42,9 +56,6 @@ Key Features:
 
 = 1.0.1 =
 * Minor pre release translation fixes and improvements
-
-= 1.0.0 =
-* Initial release
 
 == Frequently Asked Questions ==
 

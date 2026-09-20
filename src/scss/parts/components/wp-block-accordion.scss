@@ -36,7 +36,8 @@
   .wp-block-accordion-heading__toggle {
     padding: 0;
 
-    &:hover {
+    &:hover,
+    &:focus {
       .wp-block-accordion-heading__toggle-title {
         text-decoration: none;
       }

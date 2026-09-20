@@ -57,7 +57,8 @@
           text-decoration-color var(--wp--custom--transition-timing--default);
       }
 
-      &:hover {
+      &:hover,
+      &:focus-within {
         > .wp-block-navigation-item__content {
           color: var(--wp--preset--color--header-navigation);
           text-decoration-color: var(--wp--preset--color--link-vapor);
@@ -67,7 +68,8 @@
 
     // 1st level menu items
     > .wp-block-navigation-item {
-      &:hover {
+      &:hover,
+      &:focus-within {
         > .wp-block-navigation-item__content {
           text-decoration-color: var(--wp--preset--color--link-vapor);
         }
@@ -84,7 +86,8 @@
         > .wp-block-navigation-item__content {
           text-decoration-color: var(--wp--preset--color--warm-insight);
         }
-        &:hover {
+        &:hover,
+        &:focus-within {
           > .wp-block-navigation-item__content {
             text-decoration-color: var(--wp--preset--color--link-vapor);
           }
@@ -95,7 +98,8 @@
     // 1st level menu items in page list
     .wp-block-page-list {
       > .wp-block-navigation-item {
-        &:hover {
+        &:hover,
+        &:focus-within {
           > .wp-block-navigation-item__content {
             text-decoration-color: var(--wp--preset--color--link-vapor);
           }
@@ -112,7 +116,8 @@
           > .wp-block-navigation-item__content {
             text-decoration-color: var(--wp--preset--color--warm-insight);
           }
-          &:hover {
+          &:hover,
+          &:focus-within {
             > .wp-block-navigation-item__content {
               text-decoration-color: var(--wp--preset--color--link-vapor);
             }
@@ -143,9 +148,7 @@
       .has-child
       .wp-block-navigation-submenu__toggle[aria-expanded="true"]
       ~ .wp-block-navigation__submenu-container,
-    .wp-block-navigation
-      .has-child:not(.open-on-click):hover
-      > .wp-block-navigation__submenu-container,
+    .wp-block-navigation .has-child:not(.open-on-click):hover > .wp-block-navigation__submenu-container,
     .wp-block-navigation
       .has-child:not(.open-on-click):not(.open-on-hover-click):focus-within
       > .wp-block-navigation__submenu-container {
@@ -180,7 +183,8 @@
             transition: color var(--wp--custom--transition-timing--default);
           }
 
-          &:hover {
+          &:hover,
+          &:focus-within {
             > .wp-block-navigation-item__content {
               color: var(--wp--preset--color--syntax-heading);
             }
