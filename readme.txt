@@ -27,12 +27,13 @@ Key Features:
 * Added JS translation registration for the admin script
 * Fixed duplicate id attribute on the preloaded stylesheet link
 * Fixed empty alt attribute for accessibility in About and Now page patterns
-* Fixed Keyboard Navigation
+* Fixed Keyboard Navigation highlighting
 * Replaced the excerpt Read more regex with a direct string replacement
 * Improved add_accessible_read_more to only target the Read more link
 * Improved author name tag replacement in the Post Author Name block
 * Removed unused Sass @use directive from compiled CSS
 * Load the front-end script only when block navigation behavior is enabled
+* Blog listing templates now inherit the main query so WordPress Reading settings apply
 
 = 1.0.2 - 25-08-2026 =
 * Bumped "Tested up to" to 7.1
